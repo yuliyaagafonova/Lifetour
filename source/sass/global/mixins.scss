@@ -1,0 +1,265 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin fieldset-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+// Заголовки
+@mixin h1 {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 77px;
+    line-height: 77px;
+  }
+}
+
+@mixin h2 {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+
+@mixin h3 {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 35px;
+    line-height: 100px;
+  }
+}
+
+@mixin h4 {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@mixin h5 {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+@mixin h6 {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@mixin h7 {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+// Текст
+@mixin text-big {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+@mixin text-regular {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin text-small {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@mixin text-xsmall {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+// Подписи
+@mixin captions-big {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+@mixin captions-medium {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+@mixin captions-small {
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+
+// Кнопки
+@mixin button-big {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@mixin button-regular {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@mixin input {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $width-desktop) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@mixin nav {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $width-desktop) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@mixin menu {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $width-desktop) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+
+
+
+

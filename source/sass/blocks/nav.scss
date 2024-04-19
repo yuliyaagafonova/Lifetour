@@ -1,0 +1,37 @@
+.nav {
+  margin: 0 auto;
+}
+
+.nav__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nav__link {
+  @include nav;
+  color: $secondary-text-color;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  padding-bottom: 3px;
+  border-bottom: 1px solid $secondary-text-color;
+}
+
+.nav__link:focus-visible {
+  outline: 1px solid $secondary-text-color;
+  outline-offset: 3px;
+}
+
+.nav__link:active {
+  color: $active-button-color;
+  border-bottom: none;
+}
+
+.nav__link.disabled {
+  color: $disabled-button-color;
+  pointer-events: none;
+  cursor: default;
+}

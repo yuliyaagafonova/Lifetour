@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFETOUR</title>
+    <link rel="stylesheet" href="sass/style.scss">
+  </head>
+
+  <body class="page-body">
+    <header class="header" data-test="header">
+      <div class="header__wrapper container">
+        <button class="header__button" type="button" aria-label="Кнопка открытия меню.">
+          <svg width="26" height="26" aria-hidden="true" focusable="false">
+            <use href="/__spritemap#sprite-menu"></use>
+          </svg>
+        </button>
+        <img class="header__logo" src="/__spritemap#sprite-logo-header-view" width="142" height="42" alt="Логотип LIFETOUR.">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="javascript:void(0);">
+                Туры
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="javascript:void(0);">
+                Обучение
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="javascript:void(0);">
+                О нас
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="javascript:void(0);">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="javascript:void(0);">
+                Фотографии
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="javascript:void(0);">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
+      </div>
+    </header>
+
+    <!-- пример использования спрайта
+    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <svg>
+      <use href="/__spritemap#sprite-user"></use>
+    </svg> -->
+    <!-- примеры требуемых атрибутов data-test="*" -->
+    <!-- <div data-test="header">header</div>
+    <div data-test="hero">hero</div>
+    <div data-test="tours">tours</div>
+    <div data-test="training">training</div>
+    <div data-test="about">about</div>
+    <div data-test="reviews">reviews</div>
+    <div data-test="adv">adv</div>
+    <div data-test="gallery">gallery</div>
+    <div data-test="form">form</div>
+    <div data-test="footer">footer</div> -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+
+</html>
