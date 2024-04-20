@@ -1,18 +1,25 @@
 .nav {
   margin: 0 auto;
+  background: $secondary-background-color;
+  width: 100%;
+  padding: 15px 15px 50px;
 }
 
 .nav__list {
   @include list-reset;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 31px;
+  gap: 16px;
 }
 
 .nav__link {
   @include nav;
   color: $secondary-text-color;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.56px;
 }
 
 .nav__link:hover {
@@ -34,4 +41,38 @@
   color: $disabled-button-color;
   pointer-events: none;
   cursor: default;
+}
+
+@media (min-width: $width-tablet) {
+  .nav {
+    padding: 31px 45px 66px;
+  }
+
+  .nav__list {
+    gap: 22px;
+  }
+
+  .nav__link {
+    letter-spacing: 0.64px;
+  }
+}
+
+
+@media (min-width: $width-desktop) {
+  .nav {
+    padding: 0;
+    padding-top: 12px;
+    width: auto;
+  }
+
+  .nav__list {
+    gap: 31px;
+    flex-direction: row;
+  }
+
+  .nav__link {
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
 }

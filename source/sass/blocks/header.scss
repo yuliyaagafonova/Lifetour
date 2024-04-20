@@ -3,11 +3,12 @@
 }
 
 .header__wrapper {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
 
   display: grid;
-  grid-template-columns: 148px 142px;
+  grid-template-columns: repeat(2, 1fr);
+
+  position: relative;
 }
 
 .header__button {
@@ -17,10 +18,21 @@
   border: none;
   background: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .header__nav {
   display: none;
+}
+
+.header__nav.active {
+  display: block;
+  position: absolute;
+  top: 97px;
+}
+
+.header__logo {
+  margin-left: auto;
 }
 
 .header__phone {
@@ -35,14 +47,21 @@
 
 @media (min-width: $width-tablet) {
   .header__wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    grid-template-columns: repeat(3, 215px);
+    min-width: 768px;
+    padding: 20px 45px;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    margin: 0 auto;
   }
 
   .header__button {
     padding-top: 8px;
+  }
+
+  .header__nav.active {
+    display: block;
+    position: absolute;
+    top: 80px;
   }
 
   .header__logo {
@@ -51,15 +70,16 @@
 
   .header__phone {
     grid-column: auto;
-    margin-top: 0;
+    margin: 0;
+    margin-right: 2.5px;
     padding-top: 15px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .header__wrapper {
-    padding-top: 42px;
-    padding-bottom: 42px;
+    width: 1440px;
+    padding: 42px 120px;
     grid-template-columns: 206px 806px 157px;
   }
 
@@ -74,5 +94,6 @@
 
   .header__phone {
     padding-top: 14px;
+    margin-right: 0;
   }
 }
