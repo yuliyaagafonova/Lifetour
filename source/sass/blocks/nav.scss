@@ -7,6 +7,7 @@
 
 .nav__list {
   @include list-reset;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -15,6 +16,7 @@
 
 .nav__link {
   @include nav;
+
   color: $secondary-text-color;
   text-decoration: none;
   text-transform: uppercase;

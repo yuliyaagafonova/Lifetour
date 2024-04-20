@@ -12,8 +12,8 @@
     <header class="header" data-test="header">
       <div class="header__wrapper">
         <button class="header__button" type="button" aria-label="Кнопка открытия меню.">
-          <svg class="header__button-icon" width="26" height="26" aria-hidden="true" focusable="false">
-            <use href="/__spritemap#sprite-menu"></use>
+          <svg width="26" height="26" aria-hidden="true" focusable="false">
+            <use class="header__button-icon" href="/__spritemap#sprite-menu"></use>
           </svg>
         </button>
         <img class="header__logo" src="/__spritemap#sprite-logo-header-view" width="142" height="42" alt="Логотип LIFETOUR.">
@@ -54,6 +54,30 @@
         <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
       </div>
     </header>
+
+    <section class="hero" data-test="hero">
+      <div class="hero__wrapper container">
+        <h1 class="hero__title visually-hidden">LIFETOUR - организация походов в горы</h1>
+        <div class="hero__slider swiper-1">
+          <div class="swiper-1__wrapper">
+            <ul class="swiper-1__list">
+              <li class="swiper-1__item">
+                <!-- <picture class="slider__picture">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/hero-mobile@1x.webp 1x, img/hero-mobile@2x.webp 2x">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="img/hero-desktop@1x.jpg 1x, img/hero-desktop@2x.jpg 2x">
+                  <source type="image/jpg" media="(min-width: 768px)" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
+                  <img class="slider__img" src="img/hero-mobile@1x.jpg" srcset="img/hero-mobile@2x.jpg 2x" width="320" height="568" alt="Изображение гор Кавказа.">
+                </picture> -->
+                <h2>Захватывающие вершины Кавказа</h2>
+                <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                <button class="swiper-1__button button" type="button">Смотреть тур</button>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </section>
 
     <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
