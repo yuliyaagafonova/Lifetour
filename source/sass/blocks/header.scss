@@ -27,7 +27,7 @@
   @include h6;
   text-align: end;
   display: block;
-  margin-top: 14px;
+  margin-top: 16px;
   grid-column: 2 / 3;
   color: $secondary-text-color;
   text-decoration: none;
@@ -37,8 +37,8 @@
   .header__wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
-    grid-template-columns: repeat(3, 216px);
-    gap: 10px;
+    grid-template-columns: repeat(3, 215px);
+    gap: 15px;
   }
 
   .header__button {
@@ -52,7 +52,7 @@
   .header__phone {
     grid-column: auto;
     margin-top: 0;
-    padding-top: 13px;
+    padding-top: 15px;
   }
 }
 
@@ -60,7 +60,7 @@
   .header__wrapper {
     padding-top: 42px;
     padding-bottom: 42px;
-    grid-template-columns: 205px 818px 157px;
+    grid-template-columns: 206px 806px 157px;
   }
 
   .header__button {
@@ -73,6 +73,6 @@
   }
 
   .header__phone {
-    padding-top: 12px;
+    padding-top: 14px;
   }
 }
