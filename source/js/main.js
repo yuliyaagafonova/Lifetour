@@ -4,3 +4,4 @@
 // import 'swiper/css';
 
 import './nav';
+import './hero-slider';

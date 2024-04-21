@@ -18,6 +18,21 @@ body {
   min-height: 100vh;
 }
 
+body.modal-active {
+  overflow: hidden;
+}
+
+.page-blackout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 5;
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

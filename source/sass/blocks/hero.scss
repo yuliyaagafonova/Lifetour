@@ -1,95 +1,240 @@
-.hero {
-  background: url('../../img/hero/hero-mobile.jpg') #6c90b8;
+.swiper-1 {
   width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-resolution: $retina) {
-    background-image: url("../../img/hero/hero-mobile@2x.jpg"), 320px auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
 }
 
-.hero__wrapper {
-  padding-top: 145px;
-  padding-bottom: 180px;
-}
-
-.swiper-1__list {
+.swiper-1 .swiper-wrapper {
   @include list-reset;
 }
 
-.swiper-1__item {
+.swiper-1 .swiper-slide {
   color: $secondary-text-color;
   text-align: center;
+  min-height: 568px;
 }
 
-.swiper-1__item h2 {
+.swiper-1 .swiper-slide--1 {
+  background-image: url('../../img/hero/hero-1-mobile.jpg');
+  background-color: #6c90b8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../../img/hero/hero-1-mobile@2x.jpg"), 320px auto;
+  }
+}
+
+.swiper-1 .swiper-slide--2 {
+  background-image: url('../../img/hero/hero-2-mobile.jpg');
+  background-color: #6c90b8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../../img/hero/hero-2-mobile@2x.jpg"), 320px auto;
+  }
+}
+
+.swiper-1 .swiper-slide--3 {
+  background-image: url('../../img/hero/hero-3-mobile.jpg');
+  background-color: #6c90b8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../../img/hero/hero-3-mobile@2x.jpg"), 320px auto;
+  }
+}
+
+.swiper-1 .swiper-slide__wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 568px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-1 .swiper-slide__wrapper h2 {
   @include h2;
 }
 
-.swiper-1__item p {
+.swiper-1 .swiper-slide__wrapper p {
   @include text-big;
   margin-top: 15px;
 }
 
-.swiper-1__button {
+.swiper-1 .swiper-slide__button {
   @include button-regular;
   margin-top: 60px;
   width: 180px;
 }
 
+.swiper-1 .swiper-slide__img {
+  display: none;
+}
+
+.swiper-1 .swiper-pagination {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.swiper-1 .swiper-pagination-bullet {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
 @media (min-width: $width-tablet) {
-  .hero {
-    background: url('../../img/hero/hero-tablet.jpg') #6c90b8;
-    width: 100%;
-    height: auto;
+  .swiper-1 .swiper-slide--1 {
+    background-image: url('../../img/hero/hero-1-tablet.jpg');
+    background-color: #6c90b8;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/hero/hero-tablet@2x.jpg"), 768px auto;
+      background-image: url("../../img/hero/hero-1-tablet@2x.jpg"), 768px auto;
     }
   }
 
-  .hero__wrapper {
-    padding-top: 342px;
-    padding-bottom: 402px;
+  .swiper-1 .swiper-slide--2 {
+    background-image: url('../../img/hero/hero-2-tablet.jpg');
+    background-color: #6c90b8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/hero/hero-2-tablet@2x.jpg"), 768px auto;
+    }
   }
 
-  .swiper-1__button {
+  .swiper-1 .swiper-slide--3 {
+    background-image: url('../../img/hero/hero-3-tablet.jpg');
+    background-color: #6c90b8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/hero/hero-3-tablet@2x.jpg"), 768px auto;
+    }
+  }
+
+  .swiper-1 .swiper-slide__wrapper {
+    min-height: 1034px;
+  }
+
+  .swiper-1 .swiper-slide__wrapper p {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .swiper-1 .swiper-slide__button {
     margin-top: 35px;
+  }
+
+  .swiper-1 .swiper-slide__img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+
+  .swiper-1 .swiper-pagination {
+    top: 94%;
+  }
+
+  .swiper-1 .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
   }
 }
 
 @media (min-width: $width-desktop) {
-  .hero {
-    background: url('../../img/hero/hero-desktop.jpg') #6c90b8;
-    width: 100%;
-    height: auto;
+  .swiper-1 .swiper-slide {
+    text-align: start;
+    position: relative;
+  }
+
+  .swiper-1 .swiper-slide--1 {
+    background-image: url('../../img/hero/hero-1-desktop.jpg');
+    background-color: #6c90b8;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/hero/hero-desktop@2x.jpg"), 1440px auto;
+      background-image: url("../../img/hero/hero-1-desktop@2x.jpg"), 768px auto;
     }
   }
 
-  .hero__wrapper {
-    padding-top: 200px;
-    padding-bottom: 258px;
+  .swiper-1 .swiper-slide--2 {
+    background-image: url('../../img/hero/hero-2-desktop.jpg');
+    background-color: #6c90b8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/hero/hero-2-desktop@2x.jpg"), 768px auto;
+    }
   }
 
-  .swiper-1__item {
-    text-align: start;
+  .swiper-1 .swiper-slide--3 {
+    background-image: url('../../img/hero/hero-3-desktop.jpg');
+    background-color: #6c90b8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/hero/hero-3-desktop@2x.jpg"), 768px auto;
+    }
   }
 
-  .swiper-1__item h2 {
-    width: 780px;
+  .swiper-1 .swiper-slide__wrapper {
+    min-height: 800px;
+    align-items: start;
   }
 
-  .swiper-1__item p {
-    width: 420px;
+  .swiper-1 .swiper-slide__wrapper h2 {
+    max-width: 944px;
+  }
+
+  .swiper-1 .swiper-slide__wrapper p {
+    max-width: 464px;
+    margin: 0;
     margin-top: 25px;
+  }
+
+  .swiper-1 .swiper-slide__img {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9.5%;
   }
 }

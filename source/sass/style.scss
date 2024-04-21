@@ -1,5 +1,11 @@
 // Vendor
-@import "vendor/normalize";
+@import "./vendor/normalize";
+@import "./vendor/swiper";
+@import "./vendor/swiper-vars";
+
+// Swiper
+@import "swiper/scss";
+
 
 // Глобальные
 @import "./global/variables";
