@@ -1,22 +1,22 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 new Swiper('.swiper-1', {
-  modules: [ Pagination ],
+  modules: [ Pagination, Autoplay ],
 
   slidesPerView: 1,
-  // speed: 400,
-  // loop: true,
-  autoplay: true,
+  loop: true,
+
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: true,
+  // },
+
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
-  },
-
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
   },
 
   breakpoints: {

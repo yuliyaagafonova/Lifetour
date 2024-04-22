@@ -6,7 +6,7 @@ const overlay = document.querySelector('.page-blackout');
 
 buttonNav.addEventListener('click', function() {
   const currentHref = buttonIcon.querySelector('use').getAttribute('href');
-  const newHref = currentHref === '/__spritemap__884f7e72#sprite-menu' ? '/__spritemap__884f7e72#sprite-cross' : '/__spritemap__884f7e72#sprite-menu';
+  const newHref = currentHref === '/__spritemap__#sprite-cross' ? '/__spritemap__#sprite-menu' : '/__spritemap__#sprite-cross';
   buttonIcon.querySelector('use').setAttribute('href', newHref);
 
   modal.classList.toggle('modal-active');

@@ -54,7 +54,7 @@
 }
 
 .swiper-1 .swiper-slide__wrapper {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 100px;
   min-height: 568px;
   display: flex;
@@ -79,6 +79,10 @@
 }
 
 .swiper-1 .swiper-slide__img {
+  display: none;
+}
+
+.swiper-1 .swiper-info {
   display: none;
 }
 
@@ -145,6 +149,7 @@
 
   .swiper-1 .swiper-slide__wrapper {
     min-height: 1034px;
+    padding-top: 45px;
   }
 
   .swiper-1 .swiper-slide__wrapper p {
@@ -218,6 +223,8 @@
   .swiper-1 .swiper-slide__wrapper {
     min-height: 800px;
     align-items: start;
+    padding-top: 200px;
+    padding-bottom: 80px;
   }
 
   .swiper-1 .swiper-slide__wrapper h2 {
@@ -236,5 +243,48 @@
     top: 50%;
     transform: translateY(-50%);
     right: 9.5%;
+  }
+
+  .swiper-1 .swiper-info {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 132px;
+    max-width: 450px;
+  }
+
+  .swiper-1 .swiper-info__item {
+    @include text-xsmall;
+    padding: 14px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 200px;
+  }
+
+  .swiper-1 .swiper-info__icon {
+    display: block;
+    min-width: 12px;
+    height: 12px;
+
+    &--days {
+      background-image: url('/__spritemap__#sprite-moon-view');
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 12px;
+    }
+
+    &--level {
+      background-image: url('/__spritemap__#sprite-level-view');
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .swiper-1 .swiper-pagination {
+    top: 86%;
+    left: 88%;
   }
 }
