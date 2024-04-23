@@ -5,3 +5,28 @@
   background: $primary-button-color;
   color: $secondary-text-color;
 }
+
+.button:hover {
+  background: $hover-button-color;
+  color: $active-button-color;
+  outline: 1px solid $active-button-color;
+}
+
+.button:focus-visible {
+  background: $hover-button-color;
+  color: $active-button-color;
+  border: none;
+  outline: none;
+}
+
+.button:active {
+  color: $secondary-text-color;
+  background: $active-button-color;
+}
+
+.button:disabled {
+  background: $disabled-button-color;
+  cursor: default;
+  border: 1px solid $disabled-button-color;
+}
+

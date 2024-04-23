@@ -86,10 +86,16 @@
                 <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природ&nbsp;в мире.</p>
                 <button class="swiper-slide__button button" type="button">Смотреть тур</button>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/hero-photos-desktop.webp 1x, img/hero/hero-photos-desktop@2x.webp 2x" width="410" height="459">
-                  <source type="image/webp" srcset="img/hero/hero-photos-tablet.webp 1x, img/hero/hero-photos-tablet@2x.webp 2x" width="442" height="365">
-                  <source type="image/jpg" media="(min-width: 1440px)" srcset="img/hero/hero-photos-desktop.png 1x, img/hero/hero-photos-desktop@2x.png 2x" width="410" height="459">
-                  <img class="swiper-slide__img" src="img/hero/hero-photos-tablet.png" srcset="img/hero/hero-photos-tablet@2x.jpg 2x"  width="442" height="365" alt="Фотографии с похода на Камчатку." loading="lazy">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/photo-1-desktop.webp 1x, img/hero/photo-1-desktop@2x.webp 2x" width="308" height="407">
+                  <source type="image/webp" srcset="img/hero/photo-1-tablet.webp 1x, img/hero/photo-1-tablet@2x.webp 2x" width="266" height="351">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="img/hero/photo-1-desktop.png 1x, img/hero/photo-1-desktop@2x.png 2x" width="308" height="407">
+                  <img class="swiper-slide__img swiper-slide__img--1" src="img/hero/photo-1-tablet.png" srcset="img/hero/photo-1-tablet@2x.png 2x"  width="266" height="351" alt="Фотография с похода на Камчатку." loading="lazy">
+                </picture>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/photo-2-desktop.webp 1x, img/hero/photo-2-desktop@2x.webp 2x" width="277" height="366">
+                  <source type="image/webp" srcset="img/hero/photo-2-tablet.webp 1x, img/hero/photo-2-tablet@2x.webp 2x" width="236" height="312">
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="img/hero/photo-2-desktop.png 1x, img/hero/photo-2-desktop@2x.png 2x" width="277" height="366">
+                  <img class="swiper-slide__img swiper-slide__img--2" src="img/hero/photo-2-tablet.png" srcset="img/hero/photo-2-tablet@2x.png 2x"  width="236" height="312" alt="Фотография с похода на Камчатку." loading="lazy">
                 </picture>
                 <ul class="swiper-info">
                   <li class="swiper-info__item">
@@ -127,35 +133,53 @@
     </section>
 
     <section class="tours" data-test="tours">
-      <div class="tours__wrapper">
+      <div class="tours__wrapper container">
         <h2 class="tours__title">Ближайшие туры</h2>
         <div class="hero__slider swiper-2">
           <ul class="swiper-wrapper">
-            <li class="swiper-slider">
+            <li class="swiper-slide">
               <picture>
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
-                  <source type="image/jpg" media="(min-width: 1366px)" srcset="img/tours/tour-1-desktop.jpg 1x, img/tours/tour-1-desktop@2x.jpg 2x">
-                  <source type="image/jpg" media="(min-width: 768px)" srcset="img/tours/tour-1-tablet.jpg 1x, img/tours/tour-1-tablet@2x.jpg 2x">
-                  <img class="swiper-slider__img" src="img/tours/tour-1-mobile.jpg" srcset="img/tours/tour-1-mobile.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография Эльбруса." loading="lazy">
-                </picture>
-                <div class="swiper-slide__wrapper container">
-                  <div class="swiper-slider__wrapper-days">
-                    <span class="swiper-slider__geo">Кавказ</span>
-                    <span class="swiper-slider__days">4 дня</span>
-                    <span class="swiper-slider__days">3 ночи</span>
-                  </div>
-                  <h3 class="swiper-slider__title">Путешествие вокруг Эльбруса</h3>
-                  <div class="swiper-slider__wrapper-info">
-                    <span class="swiper-slider__level">Сложность</span>
-                    <span class="swiper-slider__stars" aria-label="4 звезды из 5."></span>
-                    <span class="swiper-slider__data">Даты набора:</span>
-                    <span class="swiper-slider__data-numbers">12.06–19.06</span>
-                    <span class="swiper-slider__group">Группа:</span>
-                    <span class="swiper-slider__group-numbers">до 15 чел.</span>
-                  </div>
+                <source type="image/webp" srcset="img/tours/tour-1.webp 1x, img/tours/tour-1@2x.webp 2x">
+                <img class="swiper-slide__img" src="img/tours/tour-1.jpg" srcset="img/tours/tour-1.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография Эльбруса." loading="lazy">
+              </picture>
+              <div class="swiper-slide__wrapper">
+                <div class="swiper-slide__wrapper-days">
+                  <span class="swiper-slide__geo">Кавказ</span>
+                  <span class="swiper-slide__days">4 дня</span>
+                  <span class="swiper-slide__days">3 ночи</span>
                 </div>
+                <h3 class="swiper-slide__title">Путешествие вокруг Эльбруса</h3>
+                <div class="swiper-slide__wrapper-info">
+                  <span class="swiper-slide__level">Сложность</span>
+                  <span class="swiper-slide__stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__data">Даты набора:</span>
+                  <span class="swiper-slide__data-numbers">12.06–19.06</span>
+                  <span class="swiper-slide__group">Группа:</span>
+                  <span class="swiper-slide__group-numbers">до 15 чел.</span>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="img/tours/tour-2.webp 1x, img/tours/tour-2@2x.webp 2x">
+                <img class="swiper-slide__img" src="img/tours/tour-2.jpg" srcset="img/tours/tour-2.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография Эльбруса." loading="lazy">
+              </picture>
+              <div class="swiper-slide__wrapper">
+                <div class="swiper-slide__wrapper-days">
+                  <span class="swiper-slide__geo">Кавказ</span>
+                  <span class="swiper-slide__days">4 дня</span>
+                  <span class="swiper-slide__days">3 ночи</span>
+                </div>
+                <h3 class="swiper-slide__title">Путешествие вокруг Эльбруса</h3>
+                <div class="swiper-slide__wrapper-info">
+                  <span class="swiper-slide__level">Сложность</span>
+                  <span class="swiper-slide__stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__data">Даты набора:</span>
+                  <span class="swiper-slide__data-numbers">12.06–19.06</span>
+                  <span class="swiper-slide__group">Группа:</span>
+                  <span class="swiper-slide__group-numbers">до 15 чел.</span>
+                </div>
+              </div>
             </li>
           </ul>
         </div>

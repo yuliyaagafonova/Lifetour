@@ -1,0 +1,16 @@
+.swiper-2 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.swiper-2 .swiper-wrapper {
+  @include list-reset;
+}
+
+.swiper-2 .swiper-slide__img {
+  object-fit: cover;
+}

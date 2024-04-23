@@ -5,3 +5,4 @@
 
 import './nav';
 import './hero-slider';
+import './tours-slider';

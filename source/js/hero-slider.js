@@ -8,10 +8,10 @@ new Swiper('.swiper-1', {
   slidesPerView: 1,
   loop: true,
 
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: true,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: true,
+  },
 
   pagination: {
     el: '.swiper-pagination',
