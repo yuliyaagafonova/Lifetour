@@ -1,10 +1,53 @@
+.tours__wrapper {
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.tours__title {
+  @include h2;
+}
+
 .swiper-2 {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 42px;
   overflow: hidden;
   z-index: 1;
   position: relative;
+}
+
+.swiper-2 .swiper-slide {
+  position: relative;
+  height: 416px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
+  }
+}
+
+.swiper-2 .swiper-slide__wrapper {
+  width: 252px;
+  position: absolute;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  max-height: 416px;
+  overflow-y: auto;
+  word-break: break-word;
+  color: $secondary-text-color;
 }
 
 .swiper-2 .swiper-wrapper {
@@ -13,4 +56,139 @@
 
 .swiper-2 .swiper-slide__img {
   object-fit: cover;
+  display: block;
+}
+
+.swiper-2 .swiper-slide__wrapper-days {
+  @include captions-medium;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+.swiper-2 .swiper-slide__geo {
+  margin: 0;
+  padding: 8px 12px;
+  background: $primary-button-color;
+  display: flex;
+  gap: 6px;
+}
+
+.swiper-2 .swiper-slide__geo-icon {
+  display: block;
+  min-width: 9px;
+  height: 12px;
+  background-image: url('/__spritemap__#sprite-pin-view');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 9px;
+}
+
+.swiper-2 .swiper-slide__wrapper-inline {
+  display: inline;
+}
+
+.swiper-2 .swiper-slide__wrapper-days-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.swiper-2 .swiper-slide__days {
+  margin: 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.swiper-2 .swiper-slide__days-icon {
+  &--day {
+    background-image: url('/__spritemap__#sprite-sun-view');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--night {
+    background-image: url('/__spritemap__#sprite-moon-view');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.swiper-2 .swiper-slide__title {
+  @include h3;
+  margin-top: 15px;
+}
+
+.swiper-2 .swiper-slide__wrapper-info {
+  margin-top: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background: $secondary-text-color;
+    position: absolute;
+    top: -15px;
+  }
+}
+
+.swiper-2 .swiper-slide__wrapper-info {
+  width: 250px;
+  display: grid;
+  grid-template-columns: 84px 83px 69px;
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 8px;
+  row-gap: 7px;
+}
+
+.swiper-2 .swiper-slide__item {
+  @include captions-small;
+
+  &--stars {
+    @include captions-big;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: url('/__spritemap__#sprite-4-stars-view');
+    width: 84px;
+    height: 16px;
+    margin-top: -3px;
+  }
+
+  &--data-numbers {
+    @include captions-big;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  &--group-numbers {
+    @include captions-big;
+  }
+}
+
+.tours__wrapper-navigation {
+  display: none;
+}
+
+@media (min-width: $width-tablet) {
+  .swiper-2 .swiper-slide__img {
+    width: 330px;
+  }
+
+  .tours__wrapper-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tours__wrapper-navigation {
+    display: block;
+  }
 }

@@ -134,7 +134,21 @@
 
     <section class="tours" data-test="tours">
       <div class="tours__wrapper container">
-        <h2 class="tours__title">Ближайшие туры</h2>
+        <div class="tours__wrapper-title">
+          <h2 class="tours__title">Ближайшие туры</h2>
+          <div class="tours__wrapper-navigation">
+            <button class="swiper-button-prev custom-prev" type="button" aria-label="Следующий слайд.">
+              <svg width="32" height="32" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-arrow"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-next custom-next" type="button" aria-label="Следующий слайд.">
+              <svg width="32" height="32" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="hero__slider swiper-2">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
@@ -144,40 +158,136 @@
               </picture>
               <div class="swiper-slide__wrapper">
                 <div class="swiper-slide__wrapper-days">
-                  <span class="swiper-slide__geo">Кавказ</span>
-                  <span class="swiper-slide__days">4 дня</span>
-                  <span class="swiper-slide__days">3 ночи</span>
+                  <p class="swiper-slide__geo">
+                    <span class="swiper-slide__geo-icon" aria-label="Изображение пина на карте."></span>
+                    Кавказ
+                  </p>
+                  <div class="swiper-slide__wrapper-inline">
+                    <div class="swiper-slide__wrapper-days-info">
+                      <p class="swiper-slide__days">
+                        <span class="swiper-slide__days-icon swiper-slide__days-icon--day" aria-label="Изображение солнца."></span>
+                        4&nbsp;дня
+                      </p>
+                      <p class="swiper-slide__days">
+                        <span class="swiper-slide__days-icon swiper-slide__days-icon--night" aria-label="Изображение луны."></span>
+                        3&nbsp;ночи
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <h3 class="swiper-slide__title">Путешествие вокруг Эльбруса</h3>
                 <div class="swiper-slide__wrapper-info">
-                  <span class="swiper-slide__level">Сложность</span>
-                  <span class="swiper-slide__stars" aria-label="4 звезды из 5."></span>
-                  <span class="swiper-slide__data">Даты набора:</span>
-                  <span class="swiper-slide__data-numbers">12.06–19.06</span>
-                  <span class="swiper-slide__group">Группа:</span>
-                  <span class="swiper-slide__group-numbers">до 15 чел.</span>
+                  <span class="swiper-slide__item">Сложность</span>
+                  <span class="swiper-slide__item swiper-slide__item--stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__item">Даты набора:</span>
+                  <span class="swiper-slide__item swiper-slide__item--data-numbers">12.06–19.06</span>
+                  <span class="swiper-slide__item">Группа:</span>
+                  <span class="swiper-slide__item swiper-slide__item--group-numbers">до 15 чел.</span>
                 </div>
               </div>
             </li>
             <li class="swiper-slide">
               <picture>
                 <source type="image/webp" srcset="img/tours/tour-2.webp 1x, img/tours/tour-2@2x.webp 2x">
-                <img class="swiper-slide__img" src="img/tours/tour-2.jpg" srcset="img/tours/tour-2.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография Эльбруса." loading="lazy">
+                <img class="swiper-slide__img" src="img/tours/tour-2.jpg" srcset="img/tours/tour-2.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография Белухи." loading="lazy">
               </picture>
               <div class="swiper-slide__wrapper">
                 <div class="swiper-slide__wrapper-days">
-                  <span class="swiper-slide__geo">Кавказ</span>
-                  <span class="swiper-slide__days">4 дня</span>
-                  <span class="swiper-slide__days">3 ночи</span>
+                  <p class="swiper-slide__geo">
+                    <span class="swiper-slide__geo-icon" aria-label="Изображение пина на карте."></span>
+                    Алтай
+                  </p>
+                  <div class="swiper-slide__wrapper-inline">
+                    <div class="swiper-slide__wrapper-days-info">
+                      <p class="swiper-slide__days">
+                        <span class="swiper-slide__days-icon swiper-slide__days-icon--day" aria-label="Изображение солнца."></span>
+                        14&nbsp;дней
+                      </p>
+                      <p class="swiper-slide__days">
+                        <span class="swiper-slide__days-icon swiper-slide__days-icon--night" aria-label="Изображение луны."></span>
+                        33&nbsp;ночей
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 class="swiper-slide__title">Путешествие вокруг Эльбруса</h3>
+                <h3 class="swiper-slide__title">Путь к подножию Белухи</h3>
                 <div class="swiper-slide__wrapper-info">
-                  <span class="swiper-slide__level">Сложность</span>
-                  <span class="swiper-slide__stars" aria-label="4 звезды из 5."></span>
-                  <span class="swiper-slide__data">Даты набора:</span>
-                  <span class="swiper-slide__data-numbers">12.06–19.06</span>
-                  <span class="swiper-slide__group">Группа:</span>
-                  <span class="swiper-slide__group-numbers">до 15 чел.</span>
+                  <span class="swiper-slide__item">Сложность</span>
+                  <span class="swiper-slide__item swiper-slide__item--stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__item">Даты набора:</span>
+                  <span class="swiper-slide__item swiper-slide__item--data-numbers">14.06–23.06</span>
+                  <span class="swiper-slide__item">Группа:</span>
+                  <span class="swiper-slide__item swiper-slide__item--group-numbers">до 25 чел.</span>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="img/tours/tour-3.webp 1x, img/tours/tour-3@2x.webp 2x">
+                <img class="swiper-slide__img" src="img/tours/tour-3.jpg" srcset="img/tours/tour-3.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография гор Фишт." loading="lazy">
+              </picture>
+              <div class="swiper-slide__wrapper">
+                <div class="swiper-slide__wrapper-days">
+                  <p class="swiper-slide__geo">
+                    <span class="swiper-slide__geo-icon" aria-label="Изображение пина на карте."></span>
+                    Адыгея
+                  </p>
+                  <div class="swiper-slide__wrapper-inline">
+                    <div class="swiper-slide__wrapper-days-info">
+                      <p class="swiper-slide__days">
+                        <span class="swiper-slide__days-icon swiper-slide__days-icon--day" aria-label="Изображение солнца."></span>
+                        7&nbsp;дней
+                      </p>
+                      <p class="swiper-slide__days">
+                        <span class="swiper-slide__days-icon swiper-slide__days-icon--night" aria-label="Изображение луны."></span>
+                        6&nbsp;ночей
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="swiper-slide__title">Через Фишт к Чёрному морю и обратно</h3>
+                <div class="swiper-slide__wrapper-info">
+                  <span class="swiper-slide__item">Сложность</span>
+                  <span class="swiper-slide__item swiper-slide__item--stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__item">Даты набора:</span>
+                  <span class="swiper-slide__item swiper-slide__item--data-numbers">15.07–19.07</span>
+                  <span class="swiper-slide__item">Группа:</span>
+                  <span class="swiper-slide__item swiper-slide__item--group-numbers">до 22 чел.</span>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="img/tours/tour-4.webp 1x, img/tours/tour-4@2x.webp 2x">
+                <img class="swiper-slide__img" src="img/tours/tour-4.jpg" srcset="img/tours/tour-4.jpg@2x.jpg 2x"  width="300" height="416" alt="Фотография горы Манарага." loading="lazy">
+              </picture>
+              <div class="swiper-slide__wrapper">
+                <div class="swiper-slide__wrapper-days">
+                  <p class="swiper-slide__geo">
+                    <span class="swiper-slide__geo-icon" aria-label="Изображение пина на карте."></span>
+                    Урал
+                  </p>
+                  <div class="swiper-slide__wrapper-inline">
+                    <div class="swiper-slide__wrapper-days-info">
+                      <p class="swiper-slide__days">
+                        <span class="swiper-slide__days-icon swiper-slide__days-icon--day" aria-label="Изображение солнца."></span>
+                        9&nbsp;дней
+                      </p>
+                      <p class="swiper-slide__days">
+                        <span class="swiper-slide__days-icon swiper-slide__days-icon--night" aria-label="Изображение луны."></span>
+                        10&nbsp;ночей
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="swiper-slide__title">Восхождение Манарага</h3>
+                <div class="swiper-slide__wrapper-info">
+                  <span class="swiper-slide__item">Сложность</span>
+                  <span class="swiper-slide__item swiper-slide__item--stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__item">Даты набора:</span>
+                  <span class="swiper-slide__item swiper-slide__item--data-numbers">12.07–19.07</span>
+                  <span class="swiper-slide__item">Группа:</span>
+                  <span class="swiper-slide__item swiper-slide__item--group-numbers">до 7 чел.</span>
                 </div>
               </div>
             </li>

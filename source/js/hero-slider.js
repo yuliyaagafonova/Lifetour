@@ -1,17 +1,11 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
-import { Autoplay } from 'swiper/modules';
 
 new Swiper('.swiper-1', {
-  modules: [ Pagination, Autoplay ],
+  modules: [ Pagination ],
 
   slidesPerView: 1,
   loop: true,
-
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: true,
-  },
 
   pagination: {
     el: '.swiper-pagination',

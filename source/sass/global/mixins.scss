@@ -33,26 +33,26 @@
   margin: 0;
   font-family: $primary-font;
   font-weight: 800;
-  font-size: 26px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 22px;
 
   @media (min-width: $width-tablet) {
-    font-size: 56px;
-    line-height: 56px;
+    font-size: 25px;
+    line-height: 25px;
   }
 
   @media (min-width: $width-desktop) {
-    font-size: 77px;
-    line-height: 77px;
+    font-size: 55px;
+    line-height: 55px;
   }
 }
 
 @mixin h3 {
   margin: 0;
   font-family: $primary-font;
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 22px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 
   @media (min-width: $width-tablet) {
     font-size: 25px;
@@ -175,13 +175,8 @@
   margin: 0;
   font-family: $primary-font;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 12px;
-
-  @media (min-width: $width-tablet) {
-    font-size: 13px;
-    line-height: 13px;
-  }
+  font-size: 13px;
+  line-height: 13px;
 }
 
 @mixin captions-medium {

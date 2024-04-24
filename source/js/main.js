@@ -6,3 +6,4 @@
 import './nav';
 import './hero-slider';
 import './tours-slider';
+import './tours';
