@@ -11,12 +11,12 @@
 }
 
 // Заголовки
-@mixin h1 {
+@mixin hero-title {
   margin: 0;
   font-family: $primary-font;
   font-weight: 800;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 26px;
+  line-height: 26px;
 
   @media (min-width: $width-tablet) {
     font-size: 56px;
@@ -42,40 +42,25 @@
   }
 
   @media (min-width: $width-desktop) {
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 35px;
+    line-height: 35px;
   }
 }
 
-@mixin h3 {
+@mixin card-title {
   margin: 0;
   font-family: $primary-font;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-
-  @media (min-width: $width-tablet) {
-    font-size: 25px;
-    line-height: 25px;
-  }
-
-  @media (min-width: $width-desktop) {
-    font-size: 35px;
-    line-height: 100px;
-  }
 }
 
-@mixin h4 {
+@mixin training-card-title {
   margin: 0;
   font-family: $primary-font;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-
-  @media (min-width: $width-tablet) {
-    font-size: 24px;
-    line-height: 28px;
-  }
+  font-size: 14px;
+  line-height: 16px;
 }
 
 @mixin h5 {
@@ -202,7 +187,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  letter-spacing: 4%;
+  letter-spacing: 0.56px;
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {

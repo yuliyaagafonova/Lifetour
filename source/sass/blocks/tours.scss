@@ -1,3 +1,14 @@
+.tours {
+  background: url('../../img/backgrounds/tours-bg-mobile.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 10px;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../../img/backgrounds/tours-bg-mobile@2x.jpg"), 346px auto;
+  }
+}
+
 .tours__wrapper {
   padding-top: 36px;
   padding-bottom: 20px;
@@ -45,6 +56,7 @@
   transform: translateX(-50%);
   z-index: 3;
   max-height: 416px;
+  overflow-x: hidden;
   overflow-y: auto;
   word-break: break-word;
   color: $secondary-text-color;
@@ -63,7 +75,7 @@
   @include captions-medium;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -123,7 +135,7 @@
 }
 
 .swiper-2 .swiper-slide__title {
-  @include h3;
+  @include card-title;
   margin-top: 15px;
 }
 
@@ -178,9 +190,47 @@
   display: none;
 }
 
+.tours__button-more {
+  @include button-big;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  width: 212px;
+}
+
 @media (min-width: $width-tablet) {
+  .tours {
+    background: transparent;
+
+    @media (min-resolution: $retina) {
+      background-image: none;
+    }
+  }
+
+  .tours__wrapper {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
   .swiper-2 .swiper-slide__img {
     width: 330px;
+  }
+
+  .swiper-2 .swiper-slide__wrapper {
+    width: 290px;
+  }
+
+  .swiper-2 .swiper-slide__title {
+    max-width: 242px
+  }
+
+  .swiper-2 .swiper-slide__wrapper-info {
+    width: 290px;
+    column-gap: 28px;
   }
 
   .tours__wrapper-title {
@@ -190,5 +240,33 @@
 
   .tours__wrapper-navigation {
     display: block;
+  }
+
+  .tours__button-more {
+    width: 100%;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .tours__wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .swiper-2 .swiper-slide__img {
+    width: 380px;
+  }
+
+  .swiper-2 .swiper-slide__wrapper {
+    width: 340px;
+  }
+
+  .swiper-2 .swiper-slide__wrapper-info {
+    width: 340px;
+    column-gap: 53px;
+  }
+
+  .tours__button-more {
+    margin-top: 53px;
   }
 }

@@ -1,0 +1,45 @@
+.button-link {
+  padding: 10px;
+  text-decoration: none;
+  color: $primary-text-color;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  opacity: 0.2;
+}
+
+.button-link:focus-visible {
+  color: $primary-button-color;
+}
+
+.button-link:active {
+  color: $active-button-color;
+  opacity: 1;
+}
+
+.button-link.disabled {
+  color: $disabled-button-color;
+  pointer-events: none;
+  cursor: default;
+}
+
+.small-arrow use {
+  stroke: $primary-icon-color;
+}
+
+.button-link:hover .small-arrow  use {
+  stroke: $secondary-icon-color;
+}
+
+.button-link:focus-visible .small-arrow use {
+  stroke: $secondary-icon-color;
+}
+
+.button-link:active .small-arrow use {
+  stroke: $active-button-color;
+}
+
+.button-link.disabled .small-arrow use {
+  stroke: $disabled-button-color;
+}

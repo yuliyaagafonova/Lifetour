@@ -1,0 +1,71 @@
+.training__wrapper {
+  padding-top: 20px;
+}
+
+.training__title {
+  @include h2;
+}
+
+.training__wrapper p {
+  margin-top: 35px;
+}
+
+.training__wrapper h3 {
+  @include h2;
+}
+
+.training__wrapper-title {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.training__wrapper-navigation {
+  display: none;
+}
+
+.training__slider {
+  margin-top: 25px;
+}
+
+.swiper-3 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.swiper-3 .swiper-wrapper {
+  @include list-reset;
+}
+
+.swiper-3 .swiper-slide {
+  padding: 15px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+}
+
+.swiper-3 .swiper-slide__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.swiper-3 .swiper-slide__wrapper h4 {
+  @include training-card-title;
+}
+
+.swiper-3 .swiper-slide__wrapper p {
+  @include text-xsmall;
+  line-height: 16px;
+  margin-top: 15px;
+}
+
+@media (min-width: $width-tablet) {
+  .training__wrapper-navigation {
+    display: block;
+  }
+}
