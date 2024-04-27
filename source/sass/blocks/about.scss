@@ -1,0 +1,31 @@
+.about__wrapper {
+  padding-bottom: 20px;
+}
+
+.about__bg {
+  min-height: 388px;
+  background: url('../../img/backgrounds/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -14px -8px;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../../img/backgrounds/about-bg@2x.jpg"), 320px auto;
+  }
+}
+
+.about__title {
+  @include h2;
+  margin-top: 44px;
+  margin-bottom: 42px;
+}
+
+.about h3 {
+  @include h5;
+  margin-top: 25px;
+}
+
+.about p {
+  @include text-regular;
+  margin-top: 15px;
+}

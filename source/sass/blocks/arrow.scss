@@ -35,6 +35,7 @@
 
   .arrow-button:hover use {
     fill: $active-button-color;
+    cursor: pointer;
   }
 
   .arrow-button:active use {

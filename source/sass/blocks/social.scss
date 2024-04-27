@@ -1,8 +1,36 @@
 .social-button {
-  padding: 3px 7px;
+  padding: 1px 4px;
   border: 1px solid rgba(45, 56, 63, 0.3);
+  cursor: pointer;
 }
 
 .social-icon use {
   fill: $primary-icon-color;
+}
+
+.social-button:hover {
+  border: 1px solid $primary-icon-color;
+}
+
+.social-button:focus-visible {
+  border: none;
+}
+
+.social-button:active {
+  background: $secondary-icon-color;
+  border: none;
+}
+
+.social-button:active use {
+  fill: $light-bg-icon-color;
+}
+
+.social-button.disabled {
+  background: $primary-background-color;
+  border: 1px solid $disabled-button-color;
+  pointer-events: none;
+}
+
+.social-button.disabled use {
+  fill: $disabled-button-color;
 }

@@ -14,16 +14,18 @@ new Swiper('.swiper-3', {
   breakpoints: {
     320: {
       initialSlide: 2,
+      loop: true,
     },
 
     768: {
-      slidesPerView: 2,
+      loop: false,
+      slidesPerView: 3,
       spaceBetween: 18,
     },
 
     1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 4,
+      spaceBetween: 20,
       allowTouchMove: false,
     }
   }

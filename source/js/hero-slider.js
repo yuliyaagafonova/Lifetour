@@ -3,7 +3,6 @@ import { Pagination } from 'swiper/modules';
 
 new Swiper('.swiper-1', {
   modules: [ Pagination ],
-
   slidesPerView: 1,
   loop: true,
 

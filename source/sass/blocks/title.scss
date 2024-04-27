@@ -1,0 +1,22 @@
+.title[data-shadow] {
+  position:relative;
+  width: 290px;
+
+  @media (min-width: $width-tablet) {
+    width: 542px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 800px;
+  }
+}
+
+.title[data-shadow]::after {
+  @include bg-title-text;
+  position:absolute;
+  content:attr(data-shadow);
+  color:transparent;
+  left:0;
+  top:0;
+  text-shadow: 0px -15px 1px rgba(45, 56, 63, 0.03);
+}

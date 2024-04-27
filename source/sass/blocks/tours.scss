@@ -2,7 +2,7 @@
   background: url('../../img/backgrounds/tours-bg-mobile.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right 10px;
+  background-position: right 7px;
 
   @media (min-resolution: $retina) {
     background-image: url("../../img/backgrounds/tours-bg-mobile@2x.jpg"), 346px auto;
@@ -10,7 +10,7 @@
 }
 
 .tours__wrapper {
-  padding-top: 36px;
+  padding-top: 38px;
   padding-bottom: 20px;
 }
 
@@ -22,7 +22,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 42px;
+  margin-top: 39px;
   overflow: hidden;
   z-index: 1;
   position: relative;
@@ -46,11 +46,30 @@
   }
 }
 
+.swiper-2 .swiper-slide--3 {
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
 .swiper-2 .swiper-slide__wrapper {
-  width: 252px;
+  width: 250px;
   position: absolute;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 28px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -75,13 +94,12 @@
   @include captions-medium;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
 }
 
 .swiper-2 .swiper-slide__geo {
   margin: 0;
-  padding: 8px 12px;
+  padding: 8px 13px 8px 16px;
   background: $primary-button-color;
   display: flex;
   gap: 6px;
@@ -89,7 +107,7 @@
 
 .swiper-2 .swiper-slide__geo-icon {
   display: block;
-  min-width: 9px;
+  min-width: 12px;
   height: 12px;
   background-image: url('/__spritemap__#sprite-pin-view');
   background-position: left center;
@@ -104,13 +122,17 @@
 .swiper-2 .swiper-slide__wrapper-days-info {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 16px;
+}
+
+.swiper-2 .swiper-slide__wrapper-days {
+  justify-content: space-between;
 }
 
 .swiper-2 .swiper-slide__days {
   margin: 0;
   display: flex;
-  gap: 12px;
+  gap: 11px;
   align-items: center;
 }
 
@@ -119,24 +141,24 @@
     background-image: url('/__spritemap__#sprite-sun-view');
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
+    background-size: 22px;
+    width: 21px;
+    height: 22px;
   }
 
   &--night {
     background-image: url('/__spritemap__#sprite-moon-view');
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 18px;
     width: 20px;
-    height: 20px;
+    height: 18px;
   }
 }
 
 .swiper-2 .swiper-slide__title {
   @include card-title;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .swiper-2 .swiper-slide__wrapper-info {
@@ -165,11 +187,31 @@
 .swiper-2 .swiper-slide__item {
   @include captions-small;
 
-  &--stars {
+  &--3-stars {
+    @include captions-big;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: url('/__spritemap__#sprite-3-stars-view');
+    width: 84px;
+    height: 16px;
+    margin-top: -3px;
+  }
+
+  &--4-stars {
     @include captions-big;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     background: url('/__spritemap__#sprite-4-stars-view');
+    width: 84px;
+    height: 16px;
+    margin-top: -3px;
+  }
+
+  &--5-stars {
+    @include captions-big;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: url('/__spritemap__#sprite-5-stars-view');
     width: 84px;
     height: 16px;
     margin-top: -3px;
@@ -192,14 +234,13 @@
 
 .tours__button-more {
   @include button-big;
-  margin-top: 25px;
+  margin-top: 28px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  gap: 4px;
   align-items: center;
-  justify-content: center;
-  width: 212px;
+  justify-content: space-between;
+  width: 215px;
 }
 
 @media (min-width: $width-tablet) {
@@ -211,9 +252,24 @@
     }
   }
 
+  .tours__bg-wrapper {
+    background: url('../../img/backgrounds/tours-bg-tablet.png');
+    background-repeat: no-repeat;
+    background-position: right -92px;
+    padding-left: 1px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/backgrounds/tours-bg-tablet@2x.jpg"), 604px auto;
+    }
+  }
+
   .tours__wrapper {
     padding-top: 60px;
     padding-bottom: 40px;
+  }
+
+  .swiper-2 {
+    margin-top: 25px;
   }
 
   .swiper-2 .swiper-slide__img {
@@ -222,15 +278,18 @@
 
   .swiper-2 .swiper-slide__wrapper {
     width: 290px;
+    padding-bottom: 29px;
   }
 
   .swiper-2 .swiper-slide__title {
-    max-width: 242px
+    max-width: 242px;
+    margin-top: 17px;
   }
 
   .swiper-2 .swiper-slide__wrapper-info {
-    width: 290px;
-    column-gap: 28px;
+    width: 289px;
+    column-gap: 27.5px;
+    margin-top: 29.5px;
   }
 
   .tours__wrapper-title {
@@ -244,13 +303,32 @@
 
   .tours__button-more {
     width: 100%;
+    margin-top: 26px;
+    justify-content: center;
+    gap: 12px;
+    padding-left: 12px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .tours__wrapper {
-    padding-top: 100px;
+    padding-top: 123px;
     padding-bottom: 100px;
+  }
+
+  .tours__bg-wrapper {
+    background: url('../../img/backgrounds/tours-bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: right -127px;
+    padding-left: 0;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/backgrounds/tours-bg-desktop@2x.jpg"), 602px auto;
+    }
+  }
+
+  .swiper-2 {
+    margin-top: 50px;
   }
 
   .swiper-2 .swiper-slide__img {

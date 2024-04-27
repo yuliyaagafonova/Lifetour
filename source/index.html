@@ -132,18 +132,19 @@
       </div>
     </section>
 
+    <div class="tours__bg-wrapper">
     <section class="tours" data-test="tours">
       <div class="tours__wrapper container">
         <div class="tours__wrapper-title">
-          <h2 class="tours__title">Ближайшие туры</h2>
+          <h2 class="tours__title title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
           <div class="tours__wrapper-navigation">
             <button class="tours__button-prev swiper-button-prev arrow-button" type="button" aria-label="Следующий слайд.">
-              <svg class="tours__button-icon arrow" width="20" height="10" aria-hidden="true" focusable="false">
+              <svg class="tours__button-icon arrow" width="19" height="9" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
             </button>
             <button class="tours__button-next swiper-button-next arrow-button" type="button" aria-label="Следующий слайд.">
-              <svg class="tours__button-icon arrow" width="20" height="10" aria-hidden="true" focusable="false">
+              <svg class="tours__button-icon arrow" width="19" height="9" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
             </button>
@@ -177,8 +178,8 @@
                 </div>
                 <h3 class="swiper-slide__title">Путешествие вокруг Эльбруса</h3>
                 <div class="swiper-slide__wrapper-info">
-                  <span class="swiper-slide__item">Сложность</span>
-                  <span class="swiper-slide__item swiper-slide__item--stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__item">Сложность:</span>
+                  <span class="swiper-slide__item swiper-slide__item--4-stars" aria-label="4 звезды из 5."></span>
                   <span class="swiper-slide__item">Даты набора:</span>
                   <span class="swiper-slide__item swiper-slide__item--data-numbers">12.06–19.06</span>
                   <span class="swiper-slide__item">Группа:</span>
@@ -205,15 +206,15 @@
                       </p>
                       <p class="swiper-slide__days">
                         <span class="swiper-slide__days-icon swiper-slide__days-icon--night" aria-label="Изображение луны."></span>
-                        33&nbsp;ночей
+                        13&nbsp;ночей
                       </p>
                     </div>
                   </div>
                 </div>
                 <h3 class="swiper-slide__title">Путь к подножию Белухи</h3>
                 <div class="swiper-slide__wrapper-info">
-                  <span class="swiper-slide__item">Сложность</span>
-                  <span class="swiper-slide__item swiper-slide__item--stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__item">Сложность:</span>
+                  <span class="swiper-slide__item swiper-slide__item--3-stars" aria-label="4 звезды из 5."></span>
                   <span class="swiper-slide__item">Даты набора:</span>
                   <span class="swiper-slide__item swiper-slide__item--data-numbers">14.06–23.06</span>
                   <span class="swiper-slide__item">Группа:</span>
@@ -221,7 +222,7 @@
                 </div>
               </div>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide swiper-slide--3">
               <picture>
                 <source type="image/webp" srcset="img/tours/tour-3.webp 1x, img/tours/tour-3@2x.webp 2x">
                 <img class="swiper-slide__img" src="img/tours/tour-3.jpg" srcset="img/tours/tour-3.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография гор Фишт." loading="lazy">
@@ -247,8 +248,8 @@
                 </div>
                 <h3 class="swiper-slide__title">Через Фишт к Чёрному морю и обратно</h3>
                 <div class="swiper-slide__wrapper-info">
-                  <span class="swiper-slide__item">Сложность</span>
-                  <span class="swiper-slide__item swiper-slide__item--stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__item">Сложность:</span>
+                  <span class="swiper-slide__item swiper-slide__item--4-stars" aria-label="4 звезды из 5."></span>
                   <span class="swiper-slide__item">Даты набора:</span>
                   <span class="swiper-slide__item swiper-slide__item--data-numbers">15.07–19.07</span>
                   <span class="swiper-slide__item">Группа:</span>
@@ -282,8 +283,8 @@
                 </div>
                 <h3 class="swiper-slide__title">Восхождение Манарага</h3>
                 <div class="swiper-slide__wrapper-info">
-                  <span class="swiper-slide__item">Сложность</span>
-                  <span class="swiper-slide__item swiper-slide__item--stars" aria-label="4 звезды из 5."></span>
+                  <span class="swiper-slide__item">Сложность:</span>
+                  <span class="swiper-slide__item swiper-slide__item--5-stars" aria-label="4 звезды из 5."></span>
                   <span class="swiper-slide__item">Даты набора:</span>
                   <span class="swiper-slide__item swiper-slide__item--data-numbers">12.07–19.07</span>
                   <span class="swiper-slide__item">Группа:</span>
@@ -295,17 +296,17 @@
         </div>
         <a class="tours__button-more button-link" type="button">
           <span>Показать все туры</span>
-          <svg class="tours__button-more-icon small-arrow" width="14" height="12" aria-hidden="true" focusable="false">
+          <svg class="tours__button-more-icon small-arrow" width="10" height="14" aria-hidden="true" focusable="false">
             <use href="/__spritemap#sprite-small-arrow"></use>
           </svg>
         </a>
       </div>
     </section>
 
-    <section class="training">
+    <section class="training" data-test="training">
       <div class="training__wrapper container">
-        <h2 class="training__title">Обучение</h2>
-        <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+        <h2 class="training__title title" data-shadow="Обучение">Обучение</h2>
+        <p>Обучение проводится квалифицированными специалистами, за плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         <div class="training__wrapper-title">
           <h3>Наши инструкторы</h3>
           <div class="training__wrapper-navigation">
@@ -331,12 +332,12 @@
               <div class="swiper-slide__wrapper">
                 <h4>Александр<br>Прокофьев</h4>
                 <a class="swiper-slide__social social-button" aria-label="Ссылка для перехода на страницу ВКонтакте.">
-                  <svg class="swiper-slide__social-vk social-icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <svg class="swiper-slide__social-vk social-icon" width="14" height="10" aria-hidden="true" focusable="false">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
                 </a>
               </div>
-              <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+              <span>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</span>
             </li>
             <li class="swiper-slide">
               <picture>
@@ -346,12 +347,12 @@
               <div class="swiper-slide__wrapper">
                 <h4>Светлана<br>Афиногенова</h4>
                 <a class="swiper-slide__social social-button" aria-label="Ссылка для перехода на страницу ВКонтакте.">
-                  <svg class="swiper-slide__social-vk social-icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <svg class="swiper-slide__social-vk social-icon" width="14" height="10" aria-hidden="true" focusable="false">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
                 </a>
               </div>
-              <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+              <span>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</span>
             </li>
             <li class="swiper-slide">
               <picture>
@@ -361,12 +362,12 @@
               <div class="swiper-slide__wrapper">
                 <h4>Надежда<br>Колесниченко</h4>
                 <a class="swiper-slide__social social-button" aria-label="Ссылка для перехода на страницу ВКонтакте.">
-                  <svg class="swiper-slide__social-vk social-icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <svg class="swiper-slide__social-vk social-icon" width="14" height="10" aria-hidden="true" focusable="false">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
                 </a>
               </div>
-              <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+              <span>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</span>
             </li>
             <li class="swiper-slide">
               <picture>
@@ -376,12 +377,12 @@
               <div class="swiper-slide__wrapper">
                 <h4>Федор<br>Кайгородов</h4>
                 <a class="swiper-slide__social social-button" aria-label="Ссылка для перехода на страницу ВКонтакте.">
-                  <svg class="swiper-slide__social-vk social-icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <svg class="swiper-slide__social-vk social-icon" width="14" height="10" aria-hidden="true" focusable="false">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
                 </a>
               </div>
-              <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+              <span>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</span>
             </li>
             <li class="swiper-slide">
               <picture>
@@ -391,17 +392,50 @@
               <div class="swiper-slide__wrapper">
                 <h4>Даниэль<br>Васнецов</h4>
                 <a class="swiper-slide__social social-button" aria-label="Ссылка для перехода на страницу ВКонтакте.">
-                  <svg class="swiper-slide__social-vk social-icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <svg class="swiper-slide__social-vk social-icon" width="16" height="12" aria-hidden="true" focusable="false">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
                 </a>
               </div>
-              <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+              <span>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</span>
             </li>
           </ul>
         </div>
+        <h5 class="training__process-title">Процесс обучения</h5>
+        <ul class="training__process-list">
+          <li class="training__process-item">
+            <span class="training__process-icon training__process-icon--map" aria-label="Изображение карты."></span>
+            Изучение спортивного туристского движения
+          </li>
+          <li class="training__process-item">
+            <span class="training__process-icon training__process-icon--boots" aria-label="Изображение ботинка."></span>
+            Подготовка и техническое снаряжение в походах
+          </li>
+          <li class="training__process-item">
+            <span class="training__process-icon training__process-icon--trees" aria-label="Изображение деревьев."></span>
+            Лекции по&nbsp;окружающей&nbsp;среде, экологии и гигиене
+          </li>
+          <li class="training__process-item">
+            <span class="training__process-icon training__process-icon--mountain" aria-label="Изображение гор."></span>
+            Разъяснение сложности горных препятствий
+          </li>
+        </ul>
       </div>
     </section>
+  </div>
+
+  <section class="about" data-test="about">
+    <div class="about__wrapper">
+      <div class="about__bg"></div>
+      <div class="about__content-wrapper container">
+        <h2 class="about__title title" data-shadow="О нас">О нас</h2>
+        <h3>История компании</h3>
+        <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+        <h3>Наша цель</h3>
+        <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
+      </div>
+    </div>
+  </section>
     <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
