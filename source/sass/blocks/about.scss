@@ -4,19 +4,19 @@
 
 .about__bg {
   min-height: 388px;
-  background: url('../../img/backgrounds/about-bg.jpg');
+  background: url('../../img/backgrounds/about-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -14px -8px;
+  background-position: -14px -5px;
 
   @media (min-resolution: $retina) {
-    background-image: url("../../img/backgrounds/about-bg@2x.jpg"), 320px auto;
+    background-image: url("../../img/backgrounds/about-bg@2x.png"), 320px auto;
   }
 }
 
 .about__title {
   @include h2;
-  margin-top: 44px;
+  margin-top: 48px;
   margin-bottom: 42px;
 }
 
@@ -28,4 +28,90 @@
 .about p {
   @include text-regular;
   margin-top: 15px;
+}
+
+@media (min-width: $width-tablet) {
+  .about__wrapper {
+    width: 769px;
+    margin: 0 auto;
+  }
+
+  .about__bg {
+    width: 450px;
+    min-height: 569px;
+    background: url('../../img/backgrounds/about-bg-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -141px 65px;
+    position: absolute;
+    left: 0;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/backgrounds/about-bg-tablet@2x.jpg"), 453px auto;
+    }
+  }
+
+  .about__content-wrapper {
+    width: 768px;
+    margin: 0;
+    padding-left: 449px;
+    padding-right: 49px;
+  }
+
+  .about__title {
+    margin-top: 60px;
+    margin-bottom: 48px;
+  }
+
+  .about h3 {
+    margin-top: 30px;
+  }
+
+  .about p {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .about__wrapper {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    width: 1440px;
+  }
+
+  .about__bg {
+    width: 660px;
+    min-height: 498px;
+    background: url('../../img/backgrounds/about-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 10px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/backgrounds/about-bg@2x.png"), 660px auto;
+    }
+  }
+
+  .about__content-wrapper {
+    width: 1440px;
+    padding-right: 50px;
+    padding-left: 660px;
+    padding-bottom: 80px;
+  }
+
+  .about__title {
+    margin-top: 60px;
+    margin-bottom: 58px;
+  }
+
+  .about h3 {
+    margin-top: 30px;
+  }
+
+  .about p {
+    width: 585px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
