@@ -7,3 +7,4 @@ import './nav';
 import './hero-slider';
 import './tours-slider';
 import './training-slider';
+import './reviews-slider';

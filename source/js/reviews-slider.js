@@ -1,29 +1,25 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-new Swiper('.swiper-3', {
+new Swiper('.swiper-4', {
   modules: [ Navigation ],
 
   slidesPerView: 1,
   loop: false,
+  spaceBetween: 30,
   navigation: {
-    nextEl: '.training__button-next',
-    prevEl: '.training__button-prev',
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
   },
 
   breakpoints: {
-    320: {
-      initialSlide: 2,
-    },
-
     768: {
-      slidesPerView: 3,
-      spaceBetween: 18,
+      slidesPerView: 1,
+      spaceBetween: 30,
     },
 
     1440: {
-      slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 120,
       allowTouchMove: false,
     }
   }

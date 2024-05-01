@@ -60,6 +60,7 @@
 
 .swiper-3 .swiper-slide__wrapper h4 {
   @include training-card-title;
+  word-break: break-word;
 }
 
 .swiper-3 .swiper-slide span {
@@ -158,6 +159,7 @@
 
   .training__wrapper-navigation {
     display: block;
+    min-width: 78px;
   }
 
   .swiper-3 {
