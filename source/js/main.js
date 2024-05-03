@@ -8,3 +8,4 @@ import './hero-slider';
 import './tours-slider';
 import './training-slider';
 import './reviews-slider';
+import './adv-slider';

@@ -38,7 +38,7 @@
 }
 
 .header__phone {
-  @include h6;
+  @include adv-title;
 
   text-align: end;
   display: block;
