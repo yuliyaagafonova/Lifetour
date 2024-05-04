@@ -5,7 +5,7 @@ new Swiper('.swiper-5', {
   modules: [ Navigation ],
 
   slidesPerView: 1,
-  loop: false,
+  loop: true,
   spaceBetween: 30,
   navigation: {
     nextEl: '.adv__button-next',
@@ -23,9 +23,9 @@ new Swiper('.swiper-5', {
     },
 
     1440: {
-      spaceBetween: 120,
-      allowTouchMove: false,
-      slidesPerView: 'auto',
+      slidesPerView: 3,
+      slidesPerGroup: 2,
+      initialSlide: 2,
     }
   }
 });

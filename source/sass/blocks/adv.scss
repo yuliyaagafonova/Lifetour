@@ -5,6 +5,7 @@
 
 .adv__title {
   @include h2;
+
   text-align: center;
 }
 
@@ -18,6 +19,7 @@
 
 .swiper-5 .swiper-wrapper {
   @include list-reset;
+
   flex-direction: column;
   gap: 15px;
 }
@@ -41,18 +43,24 @@
 
 .swiper-5 .swiper-slide h3 {
   @include adv-title;
+
   margin-top: 19.5px;
   padding: 0 10px;
 }
 
 .swiper-5 .swiper-slide p {
   @include text-small;
+
   margin-top: 14px;
+}
+
+.adv__wrapper-navigation {
+  display: none;
 }
 
 @media (min-width: $width-tablet) {
   .adv {
-    background: url('../../img/backgrounds/adv-bg-tablet.png');
+    background: url("../../img/backgrounds/adv-bg-tablet.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 165px;
@@ -65,8 +73,8 @@
   .adv__wrapper {
     padding-top: 60px;
     padding-bottom: 40px;
-    padding-right: 46px;
-    padding-left: 44px;
+    padding-right: 46.5px;
+    padding-left: 43.5px;
   }
 
   .adv .title[data-shadow] {
@@ -93,12 +101,13 @@
     width: 324px;
     min-height: 340px;
     margin-bottom: 30px;
-    padding: 30px 19px 29px 19px;
+    padding: 30px 19px 29px;
   }
 
   .swiper-5 .swiper-slide__icon {
     width: 48px;
     height: 48px;
+    border: 2px solid $secondary-icon-color;
   }
 
   .swiper-5 .swiper-slide h3 {
@@ -106,7 +115,13 @@
   }
 
   .swiper-5 .swiper-slide--herb h3 {
-    padding-right: 12px;
+    padding-right: 14.5px;
+  }
+
+  .swiper-5 .swiper-slide--herb h3 > span {
+    padding-left: 4px;
+    display: block;
+    margin-top: 0.5px;
   }
 
   .swiper-5 .swiper-slide p {
@@ -115,8 +130,58 @@
 }
 
 @media (min-width: $width-desktop) {
+  .adv {
+    background: none;
+  }
+
+  .adv__wrapper {
+    padding-top: 135px;
+    padding-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .adv__slider {
+    margin-top: 50px;
+  }
+
+  .adv .title[data-shadow] {
+    width: 1440px;
+  }
+
+  .adv .title[data-shadow]::after {
+    text-shadow: 492px -15px 1px rgba(45, 56, 63, 0.03);
+  }
+
+  .swiper-5 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+  }
+
+  .swiper-5 .swiper-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .swiper-5 .swiper-slide {
+    width: 380px;
+    min-height: 329px;
+    margin-bottom: 0;
+    padding: 40px 20px;
+  }
+
   .swiper-5 .swiper-slide p {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .adv__wrapper-navigation {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 80px;
   }
 }

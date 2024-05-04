@@ -1,5 +1,5 @@
 .tours {
-  background: url('../../img/backgrounds/tours-bg-mobile.png');
+  background: url("../../img/backgrounds/tours-bg-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 7px;
@@ -33,7 +33,7 @@
   height: 416px;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
@@ -48,7 +48,7 @@
 
 .swiper-2 .swiper-slide--3 {
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
@@ -92,9 +92,11 @@
 
 .swiper-2 .swiper-slide__wrapper-days {
   @include captions-medium;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
 .swiper-2 .swiper-slide__geo {
@@ -109,7 +111,7 @@
   display: block;
   min-width: 12px;
   height: 12px;
-  background-image: url('/__spritemap__#sprite-pin-view');
+  background-image: url("/__spritemap__#sprite-pin-view");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 9px;
@@ -125,10 +127,6 @@
   gap: 16px;
 }
 
-.swiper-2 .swiper-slide__wrapper-days {
-  justify-content: space-between;
-}
-
 .swiper-2 .swiper-slide__days {
   margin: 0;
   display: flex;
@@ -138,7 +136,7 @@
 
 .swiper-2 .swiper-slide__days-icon {
   &--day {
-    background-image: url('/__spritemap__#sprite-sun-view');
+    background-image: url("/__spritemap__#sprite-sun-view");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 22px;
@@ -147,7 +145,7 @@
   }
 
   &--night {
-    background-image: url('/__spritemap__#sprite-moon-view');
+    background-image: url("/__spritemap__#sprite-moon-view");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 18px;
@@ -158,12 +156,19 @@
 
 .swiper-2 .swiper-slide__title {
   @include card-title;
+
   margin-top: 16px;
 }
 
 .swiper-2 .swiper-slide__wrapper-info {
   margin-top: 30px;
   position: relative;
+  width: 250px;
+  display: grid;
+  grid-template-columns: 84px 83px 69px;
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 8px;
+  row-gap: 7px;
 
   &::before {
     content: "";
@@ -175,23 +180,15 @@
   }
 }
 
-.swiper-2 .swiper-slide__wrapper-info {
-  width: 250px;
-  display: grid;
-  grid-template-columns: 84px 83px 69px;
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 8px;
-  row-gap: 7px;
-}
-
 .swiper-2 .swiper-slide__item {
   @include captions-small;
 
   &--3-stars {
     @include captions-big;
+
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background: url('/__spritemap__#sprite-3-stars-view');
+    background: url("/__spritemap__#sprite-3-stars-view");
     width: 84px;
     height: 16px;
     margin-top: -3px;
@@ -199,9 +196,10 @@
 
   &--4-stars {
     @include captions-big;
+
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background: url('/__spritemap__#sprite-4-stars-view');
+    background: url("/__spritemap__#sprite-4-stars-view");
     width: 84px;
     height: 16px;
     margin-top: -3px;
@@ -209,9 +207,10 @@
 
   &--5-stars {
     @include captions-big;
+
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background: url('/__spritemap__#sprite-5-stars-view');
+    background: url("/__spritemap__#sprite-5-stars-view");
     width: 84px;
     height: 16px;
     margin-top: -3px;
@@ -219,6 +218,7 @@
 
   &--data-numbers {
     @include captions-big;
+
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
@@ -234,6 +234,7 @@
 
 .tours__button-more {
   @include button-big;
+
   margin-top: 28px;
   margin-left: auto;
   margin-right: auto;
@@ -252,8 +253,8 @@
     }
   }
 
-  .tours__bg-wrapper {
-    background: url('../../img/backgrounds/tours-bg-tablet.png');
+  .bg-wrapper {
+    background: url("../../img/backgrounds/tours-bg-tablet.png");
     background-repeat: no-repeat;
     background-position: right -92px;
     padding-left: 1px;
@@ -316,8 +317,8 @@
     padding-bottom: 100px;
   }
 
-  .tours__bg-wrapper {
-    background: url('../../img/backgrounds/tours-bg-desktop.png');
+  .bg-wrapper {
+    background: url("../../img/backgrounds/tours-bg-desktop.png");
     background-repeat: no-repeat;
     background-position: right -127px;
     padding-left: 0;

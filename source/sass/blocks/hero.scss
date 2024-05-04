@@ -17,7 +17,7 @@
   min-height: 568px;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
@@ -31,7 +31,7 @@
 }
 
 .swiper-1 .swiper-slide--1 {
-  background-image: url('../../img/hero/hero-1-mobile.jpg');
+  background-image: url("../../img/hero/hero-1-mobile.jpg");
   background-color: #6c90b8;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +43,7 @@
 }
 
 .swiper-1 .swiper-slide--2 {
-  background-image: url('../../img/hero/hero-2-mobile.jpg');
+  background-image: url("../../img/hero/hero-2-mobile.jpg");
   background-color: #6c90b8;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,7 +55,7 @@
 }
 
 .swiper-1 .swiper-slide--3 {
-  background-image: url('../../img/hero/hero-3-mobile.jpg');
+  background-image: url("../../img/hero/hero-3-mobile.jpg");
   background-color: #6c90b8;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,11 +84,13 @@
 
 .swiper-1 .swiper-slide__wrapper p {
   @include text-big;
+
   margin-top: 15px;
 }
 
 .swiper-1 .swiper-slide__button {
   @include button-regular;
+
   margin-top: 60px;
   width: 180px;
 }
@@ -131,7 +133,7 @@
   }
 
   .swiper-1 .swiper-slide--1 {
-    background-image: url('../../img/hero/hero-1-tablet.jpg');
+    background-image: url("../../img/hero/hero-1-tablet.jpg");
     background-color: #6c90b8;
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,7 +145,7 @@
   }
 
   .swiper-1 .swiper-slide--2 {
-    background-image: url('../../img/hero/hero-2-tablet.jpg');
+    background-image: url("../../img/hero/hero-2-tablet.jpg");
     background-color: #6c90b8;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,7 +157,7 @@
   }
 
   .swiper-1 .swiper-slide--3 {
-    background-image: url('../../img/hero/hero-3-tablet.jpg');
+    background-image: url("../../img/hero/hero-3-tablet.jpg");
     background-color: #6c90b8;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,7 +184,7 @@
     margin-top: 36px;
   }
 
-  .swiper-1 .swiper-slide__img{
+  .swiper-1 .swiper-slide__img {
     display: block;
     margin: 0 auto;
 
@@ -219,7 +221,7 @@
   }
 
   .swiper-1 .swiper-slide--1 {
-    background-image: url('../../img/hero/hero-1-desktop.jpg');
+    background-image: url("../../img/hero/hero-1-desktop.jpg");
     background-color: #6c90b8;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,7 +233,7 @@
   }
 
   .swiper-1 .swiper-slide--2 {
-    background-image: url('../../img/hero/hero-2-desktop.jpg');
+    background-image: url("../../img/hero/hero-2-desktop.jpg");
     background-color: #6c90b8;
     background-repeat: no-repeat;
     background-size: cover;
@@ -243,7 +245,7 @@
   }
 
   .swiper-1 .swiper-slide--3 {
-    background-image: url('../../img/hero/hero-3-desktop.jpg');
+    background-image: url("../../img/hero/hero-3-desktop.jpg");
     background-color: #6c90b8;
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,6 +291,7 @@
 
   .swiper-1 .swiper-info {
     @include list-reset;
+
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -298,6 +301,7 @@
 
   .swiper-1 .swiper-info__item {
     @include text-xsmall;
+
     padding: 13px 19px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
@@ -312,14 +316,14 @@
     height: 12px;
 
     &--days {
-      background-image: url('/__spritemap__#sprite-moon-view');
+      background-image: url("/__spritemap__#sprite-moon-view");
       background-position: left center;
       background-repeat: no-repeat;
       background-size: 12px;
     }
 
     &--level {
-      background-image: url('/__spritemap__#sprite-level-view');
+      background-image: url("/__spritemap__#sprite-level-view");
       background-position: left;
       background-repeat: no-repeat;
     }

@@ -24,6 +24,7 @@
 
 .swiper-4 .swiper-wrapper {
   @include list-reset;
+
   width: 320px;
 }
 
@@ -42,6 +43,7 @@
 
 .swiper-4 .swiper-slide p {
   @include text-xsmall;
+
   margin-top: 19px;
 }
 
@@ -51,6 +53,7 @@
 
 .swiper-4 .swiper-slide h3 {
   @include captions-big;
+
   font-size: 12px;
   line-height: 12px;
   margin-top: 16px;
@@ -58,6 +61,7 @@
 
 .swiper-4 .swiper-slide span {
   @include captions-small;
+
   display: block;
   margin-top: 7px;
 }
@@ -104,6 +108,7 @@
 
   .swiper-4 .swiper-slide h3 {
     @include captions-big;
+
     margin-top: 28px;
   }
 
@@ -139,13 +144,12 @@
   }
 
   .swiper-4 .swiper-slide p {
-   font-size: 14px;
-   line-height: 22px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .swiper-4 .swiper-slide h3 {
     margin-top: 2px;
   }
 }
-
 

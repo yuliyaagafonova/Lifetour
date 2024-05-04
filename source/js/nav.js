@@ -4,7 +4,7 @@ const buttonIcon = document.querySelector('.header__button-icon');
 const modal = document.querySelector('.page-body');
 const overlay = document.querySelector('.page-blackout');
 
-buttonNav.addEventListener('click', function() {
+buttonNav.addEventListener('click', () => {
   const currentHref = buttonIcon.querySelector('use').getAttribute('href');
   const newHref = currentHref === '/__spritemap__#sprite-cross' ? '/__spritemap__#sprite-menu' : '/__spritemap__#sprite-cross';
   buttonIcon.querySelector('use').setAttribute('href', newHref);
