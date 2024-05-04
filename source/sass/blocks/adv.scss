@@ -30,55 +30,13 @@
 }
 
 .swiper-5 .swiper-slide__icon {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   width: 42px;
   height: 42px;
-
-  &--safe {
-    background-image: url('/__spritemap__#sprite-safe-view');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 42px;
-    min-width: 42px;
-    height: 42px;
-  }
-
-  &--crown {
-    background-image: url('/__spritemap__#sprite-crown-view');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 42px;
-    min-width: 42px;
-    height: 42px;
-  }
-
-  &--boots-square {
-    background-image: url('/__spritemap__#sprite-boots-square-view');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 42px;
-    min-width: 42px;
-    height: 42px;
-  }
-
-  &--road {
-    background-image: url('/__spritemap__#sprite-road-view');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 42px;
-    min-width: 42px;
-    height: 42px;
-  }
-
-  &--herb {
-    background-image: url('/__spritemap__#sprite-herb-view');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 42px;
-    min-width: 42px;
-    height: 42px;
-  }
+  border: 2px solid $secondary-icon-color;
 }
 
 .swiper-5 .swiper-slide h3 {
@@ -93,9 +51,22 @@
 }
 
 @media (min-width: $width-tablet) {
+  .adv {
+    background: url('../../img/backgrounds/adv-bg-tablet.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 165px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/backgrounds/adv-bg-tablet@2x.png'"), 2091px auto;
+    }
+  }
+
   .adv__wrapper {
-    padding-top: 78px;
+    padding-top: 60px;
     padding-bottom: 40px;
+    padding-right: 46px;
+    padding-left: 44px;
   }
 
   .adv .title[data-shadow] {
@@ -103,7 +74,7 @@
   }
 
   .adv .title[data-shadow]::after {
-    text-shadow: 176px -15px 1px rgba(45, 56, 63, 0.03);
+    text-shadow: 171px -15px 1px rgba(45, 56, 63, 0.03);
   }
 
   .adv__slider {
@@ -111,15 +82,36 @@
   }
 
   .swiper-5 .swiper-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(324px, 324px));
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
     justify-content: center;
+    width: 708px;
   }
 
-  // .swiper-5 .swiper-slide {
-  //   width: 324px;
-  // }
+  .swiper-5 .swiper-slide {
+    width: 324px;
+    min-height: 340px;
+    margin-bottom: 30px;
+    padding: 30px 19px 29px 19px;
+  }
+
+  .swiper-5 .swiper-slide__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .swiper-5 .swiper-slide h3 {
+    margin-top: 25px;
+  }
+
+  .swiper-5 .swiper-slide--herb h3 {
+    padding-right: 12px;
+  }
+
+  .swiper-5 .swiper-slide p {
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: $width-desktop) {

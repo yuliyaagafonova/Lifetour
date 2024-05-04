@@ -18,8 +18,8 @@ new Swiper('.swiper-5', {
     },
 
     768: {
-      slidesPerView: 'auto',
-      spaceBetween: 30,
+      slidesPerView: 2,
+      allowTouchMove: false,
     },
 
     1440: {
