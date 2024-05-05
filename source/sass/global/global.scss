@@ -56,6 +56,17 @@ body {
     margin: 0 auto;
     padding: 0 45px;
   }
+
+  .bg-wrapper-tours {
+    background: url("../../img/backgrounds/tours-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: right -92px;
+    padding-left: 1px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/backgrounds/tours-bg-tablet@2x.jpg"), 604px auto;
+    }
+  }
 }
 
 @media (min-width: $width-desktop) {
@@ -63,5 +74,26 @@ body {
     width: 1440px;
     margin: 0 auto;
     padding: 0 120px;
+  }
+
+  .bg-wrapper-tours {
+    background: url("../../img/backgrounds/tours-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: right -127px;
+    padding-left: 0;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/backgrounds/tours-bg-desktop@2x.jpg"), 602px auto;
+    }
+  }
+
+  .bg-wrapper-reviews {
+    background: url("../../img/backgrounds/reviews-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: right 310px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/backgrounds/reviews-bg-desktop@2x.jpg"), 2091px auto;
+    }
   }
 }

@@ -14,14 +14,13 @@ new Swiper('.swiper-6', {
 
   breakpoints: {
     768: {
-      slidesPerView: 2,
-      spaceBetween: 18,
+      slidesPerView: 3,
     },
 
     1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
       allowTouchMove: false,
+      navigation: false,
+      slidesPerView: 5,
     }
   }
 });

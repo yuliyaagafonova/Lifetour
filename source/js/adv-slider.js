@@ -23,9 +23,10 @@ new Swiper('.swiper-5', {
     },
 
     1440: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       slidesPerGroup: 2,
       initialSlide: 2,
+      centeredSlides: true,
     }
   }
 });

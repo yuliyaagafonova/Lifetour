@@ -253,17 +253,6 @@
     }
   }
 
-  .bg-wrapper {
-    background: url("../../img/backgrounds/tours-bg-tablet.png");
-    background-repeat: no-repeat;
-    background-position: right -92px;
-    padding-left: 1px;
-
-    @media (min-resolution: $retina) {
-      background-image: url("../../img/backgrounds/tours-bg-tablet@2x.jpg"), 604px auto;
-    }
-  }
-
   .tours__wrapper {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -315,17 +304,6 @@
   .tours__wrapper {
     padding-top: 123px;
     padding-bottom: 100px;
-  }
-
-  .bg-wrapper {
-    background: url("../../img/backgrounds/tours-bg-desktop.png");
-    background-repeat: no-repeat;
-    background-position: right -127px;
-    padding-left: 0;
-
-    @media (min-resolution: $retina) {
-      background-image: url("../../img/backgrounds/tours-bg-desktop@2x.jpg"), 602px auto;
-    }
   }
 
   .swiper-2 {
