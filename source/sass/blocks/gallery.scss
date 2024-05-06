@@ -49,6 +49,7 @@
   display: block;
   object-fit: cover;
   position: relative;
+  overflow: hidden;
 
   &--1 {
     top: -6px;
@@ -127,9 +128,9 @@
 
     &--2 {
       width: 252px;
-      height: 238px;
+      height: 239px;
       left: 1px;
-      top: -26px;
+      top: -25px;
     }
 
     &--3 {
@@ -168,12 +169,12 @@
 
 @media (min-width: $width-desktop) {
   .gallery__wrapper {
-    padding: 151px 120px 0 120px;
+    padding: 124px 120px 0 120px;
   }
 
   .gallery__wrapper-text {
     display: block;
-    margin-top: 26px;
+    margin-top: 22px;
   }
 
   .gallery__wrapper-navigation {
@@ -185,7 +186,7 @@
   }
 
   .gallery__slider {
-    margin-top: 46px;
+    margin-top: 45px;
   }
 
   .swiper-6 {
@@ -209,7 +210,7 @@
     &--1 {
       width: 284px;
       height: 476px;
-      top: -9px;
+      top: -6px;
     }
 
     &--2 {
@@ -221,34 +222,34 @@
 
     &--3 {
       width: 284px;
-      height: 223px;
-      top: 1px;
+      height: 226px;
+      top: 0;
     }
 
     &--4 {
       width: 284px;
-      height: 463px;
-      left: -0.5px;
-      top: -4px;
+      height: 466px;
+      left: 0;
+      top: -3px;
     }
 
     &--5 {
       width: 284px;
-      height: 240px;
-      top: -27px;
+      height: 231px;
+      top: 0;
       left: 0;
     }
 
     &--6 {
       width: 284px;
-      height: 223px;
+      height: 228px;
       left: 0;
-      top: -20px;
+      top: 0;
     }
 
     &--7 {
       width: 284px;
-      height: 463px;
+      height: 464px;
     }
   }
 }

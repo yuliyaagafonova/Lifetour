@@ -687,8 +687,54 @@
   </section>
 
   <section class="form" data-test="form">
-    <div class="form__wrapper">
+    <div class="form__wrapper container">
+      <h2>Остались вопросы?</h2>
+      <p>Заполните форму и наш оператор свяжется с&nbsp;вами&nbsp;для&nbsp;консультации.</p>
+      <form class="form__fields" action="https://echo.htmlacademy.ru/" method="post" id="form">
+        <div class="form__wrapper-fields">
+          <label aria-label="Телефон">
+            <input class="form__phone" placeholder="Телефон" type="text" name="phone" id="phone" required>
+          </label>
+          <label aria-label="Email">
+            <input class="form__email" placeholder="Email" type="email" name="email" id="email" required>
+          </label>
+          <button class="form__button button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
+  <section class="footer" data-test="footer">
+    <div class="footer__contacts contacts">
+      <h2 class="contacts__title title" data-shadow="Контакты">Контакты</h2>
+      <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <span class="contacts__icon contacts__icon--phone"></span>
+          <div class="contacts__text-wrapper">
+            <span class="contacts__text">Телефон</span>
+            <a class="contacts__info" href="tel:89837454545">+7 983 745-45-45</a>
+          </div>
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__icon contacts__icon--mail"></span>
+          <div class="contacts__text-wrapper">
+            <span class="contacts__text">Email</span>
+            <a class="contacts__info" href="mailto:info@lifetour.com">info@lifetour.com</a>
+          </div>
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__icon contacts__icon--pin"></span>
+          <div class="contacts__text-wrapper">
+            <span class="contacts__text">Адрес</span>
+            <span class="contacts__info">г. Москва, пр-т Мира, д. 14, офис 101</span>
+          </div>
+        </li>
+      </ul>
+      <picture>
+        <source type="image/webp" srcset="img/footer/footer-map.webp 1x, img/footer/footer-map@2x.webp 2x">
+        <img class="contacts__map" src="img/footer/footer-map.png" srcset="img/footer/footer-map@2x.png 2x"  width="320" height="343" alt="Карта с месторасположением компании lifetour." loading="lazy">
+      </picture>
     </div>
   </section>
     <!-- <div data-test="gallery">gallery</div>
