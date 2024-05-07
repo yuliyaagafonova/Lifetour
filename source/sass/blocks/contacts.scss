@@ -1,0 +1,106 @@
+.contacts__wrapper {
+  padding-top: 36px;
+  padding-bottom: 30px;
+}
+
+.contacts__title {
+  @include h2;
+}
+
+.contacts__wrapper p {
+  @include text-small;
+  margin-top: 29px;
+}
+
+.contacts__list {
+  @include list-reset;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contacts__item {
+  display: flex;
+  gap: 10px;
+}
+
+.contacts__icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+
+  &--phone {
+    background-image: url("/__spritemap__#sprite-phone-view");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+  }
+
+  &--mail {
+    background-image: url("/__spritemap__#sprite-mail-view");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+  }
+
+  &--pin {
+    background-image: url("/__spritemap__#sprite-pin-dark-view");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.contacts__text-wrapper {
+  max-width: 189px;
+}
+
+.contacts__text {
+  @include adv-title;
+}
+
+.contacts__info {
+  @include text-small;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  margin-top: 8px;
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+.contacts__map-wrapper {
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url("/__spritemap__#sprite-pin-map-view");
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    right: 28%;
+  }
+}
+
+.contacts__map {
+  display: block;
+  object-fit: cover;
+}
+
+
+@media (min-width: $width-tablet) {
+  .contacts__wrapper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
