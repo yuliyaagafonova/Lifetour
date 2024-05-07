@@ -67,6 +67,10 @@
     margin-bottom: 48px;
   }
 
+  .about__title.title[data-shadow] {
+    width: 270px;
+  }
+
   .about h3 {
     margin-top: 30px;
   }
@@ -106,6 +110,10 @@
   .about__title {
     margin-top: 60px;
     margin-bottom: 58px;
+  }
+
+  .about__title.title[data-shadow] {
+    width: 660px;
   }
 
   .about h3 {

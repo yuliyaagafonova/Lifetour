@@ -229,13 +229,8 @@
 @mixin input {
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-
-  @media (min-width: $width-desktop) {
-    font-size: 16px;
-    line-height: 16px;
-  }
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @mixin nav {

@@ -25,7 +25,7 @@
 }
 
 .form__wrapper {
-  padding: 174px 31px;
+  padding: 175px 31px;
   text-align: center;
   color: $secondary-text-color;
   position: relative;
@@ -39,8 +39,13 @@
 .form__wrapper p {
   @include text-small;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 19px;
   width: 220px;
+}
+
+.form__wrapper p > span > span {
+  display: block;
+  padding-left: 3px;
 }
 
 .form__fields {
@@ -54,33 +59,67 @@
 }
 
 .form__wrapper-fields input {
+  @include input;
   width: 258px;
-  padding: 15px;
+  padding: 14px;
+  border-radius: 3px;
 }
 
 .form__wrapper-fields input::placeholder {
   opacity: 0.5;
 }
 
+.form__button {
+  @include input;
+  padding: 21px;
+  border-radius: 5px;
+}
+
 @media (min-width: $width-tablet) {
+  .form {
+    padding-right: 0.9px;
+  }
+
   .form__wrapper {
-    padding: 180.5px 204px;
+    padding: 184px 48px 181px 42px;
   }
 
   .form__wrapper p {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 25px;
+    margin-top: 28px;
     width: 300px;
+    padding-left: 1px;
+  }
+
+  .form__wrapper p > span > span {
+    display: inline;
+    padding-left: 0;
+  }
+
+  .form__wrapper p > span {
+    display: block;
+    padding-left: 3px;
+  }
+
+  .form__fields {
+    margin-top: 23px;
+    padding-left: 4px;
   }
 
   .form__wrapper-fields {
-    gap: 10px;
+    gap: 9px;
   }
 
   .form__wrapper-fields input {
+    width: 362px;
+    padding: 18px 30px;
+  }
+
+  .form__button {
     width: 360px;
-    padding: 20px 30px;
+    margin: 0 auto;
+    padding: 20px;
   }
 }
 
