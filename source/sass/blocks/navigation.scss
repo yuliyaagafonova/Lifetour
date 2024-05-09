@@ -1,0 +1,36 @@
+.navigation__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  column-gap: 50px;
+  row-gap: 9px;
+  text-align: center;
+}
+
+.navigation__item:nth-child(2) {
+  grid-column: 1 / 2;
+}
+
+.navigation__item:nth-child(3) {
+  grid-column: 1 / 2;
+}
+
+.navigation__item:nth-child(4) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.navigation__item:nth-child(5) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.navigation__link {
+  @include nav;
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+.footer__phone {
+  display: none;
+}

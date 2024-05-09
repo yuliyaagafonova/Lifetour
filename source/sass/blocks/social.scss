@@ -5,6 +5,27 @@
   min-width: 24px;
 }
 
+.social {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 290px;
+  justify-content: center;
+}
+
+.social__item {
+  width: 32px;
+  height: 30px;
+}
+
+.social__link {
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .social-icon use {
   fill: $primary-icon-color;
 }

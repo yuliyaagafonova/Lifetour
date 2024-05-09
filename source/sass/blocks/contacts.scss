@@ -1,6 +1,6 @@
 .contacts__wrapper {
-  padding-top: 36px;
-  padding-bottom: 30px;
+  padding-top: 37px;
+  padding-bottom: 29px;
 }
 
 .contacts__title {
@@ -8,7 +8,7 @@
 }
 
 .contacts__wrapper p {
-  @include text-small;
+  @include text-regular;
   margin-top: 29px;
 }
 
@@ -33,29 +33,29 @@
 
   &--phone {
     background-image: url("/__spritemap__#sprite-phone-view");
-    background-position: left center;
+    background-position: left -1px;
     background-repeat: no-repeat;
     background-size: 22px;
     width: 22px;
-    height: 22px;
+    height: 23px;
   }
 
   &--mail {
     background-image: url("/__spritemap__#sprite-mail-view");
-    background-position: left center;
+    background-position: left -1px;
     background-repeat: no-repeat;
     background-size: 22px;
     width: 22px;
-    height: 22px;
+    height: 23px;
   }
 
   &--pin {
     background-image: url("/__spritemap__#sprite-pin-dark-view");
-    background-position: left center;
+    background-position: left -1px;
     background-repeat: no-repeat;
     background-size: 22px;
     width: 22px;
-    height: 22px;
+    height: 23px;
   }
 }
 
@@ -68,7 +68,7 @@
 }
 
 .contacts__info {
-  @include text-small;
+  @include text-regular;
   font-size: 14px;
   line-height: 20px;
   display: block;
@@ -87,15 +87,17 @@
     height: 28px;
     position: absolute;
     top: 50%;
-    right: 28%;
+    right: 29.5%;
   }
 }
 
 .contacts__map {
   display: block;
   object-fit: cover;
+  margin-bottom: 20px;
+  position: relative;
+  left: -0.3px;
 }
-
 
 @media (min-width: $width-tablet) {
   .contacts__wrapper p {
