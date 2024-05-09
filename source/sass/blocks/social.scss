@@ -63,4 +63,12 @@
   }
 }
 
+@media (min-width: $width-desktop) {
+  .social {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+
 

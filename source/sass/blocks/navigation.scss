@@ -31,13 +31,18 @@
   text-decoration: none;
 }
 
-.footer__phone {
-  display: none;
-}
-
 @media (min-width: $width-tablet) {
   .navigation__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 23.5px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .navigation__list {
+    width: 800px;
+    gap: 30px;
   }
 }
