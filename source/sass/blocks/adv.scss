@@ -1,6 +1,7 @@
 .adv__wrapper {
   padding-top: 37px;
   padding-bottom: 20px;
+  word-break: break-word;
 }
 
 .adv__title {
@@ -156,6 +157,10 @@
 
   .adv__slider {
     margin-top: 50px;
+  }
+
+  .adv__title {
+    padding: 0 120px;
   }
 
   .adv .title[data-shadow] {

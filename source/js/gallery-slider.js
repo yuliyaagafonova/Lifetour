@@ -21,6 +21,7 @@ new Swiper('.swiper-6', {
       allowTouchMove: false,
       navigation: false,
       slidesPerView: 5,
+      spaceBetween: -10,
     }
   }
 });

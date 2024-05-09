@@ -1,6 +1,7 @@
 .contacts__wrapper {
   padding-top: 37px;
   padding-bottom: 29px;
+  word-break: break-word;
 }
 
 .contacts__title {
@@ -182,6 +183,11 @@
     grid-template-columns: repeat(2, 600px);
     align-items: center;
     margin-bottom: 95px;
+    justify-content: space-between;
+  }
+
+  .contacts__title {
+    max-width: 500px;
   }
 
   .contacts__wrapper {

@@ -5,6 +5,7 @@
   overflow: hidden;
   z-index: 1;
   position: relative;
+  word-break: break-word;
 }
 
 .swiper-1 .swiper-wrapper {
@@ -297,6 +298,7 @@
     gap: 10px;
     margin-top: 132px;
     max-width: 450px;
+    align-items: flex-start;
   }
 
   .swiper-1 .swiper-info__item {

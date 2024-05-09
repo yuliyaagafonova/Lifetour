@@ -23,6 +23,7 @@ new Swiper('.swiper-5', {
     },
 
     1440: {
+      allowTouchMove: false,
       slidesPerView: 'auto',
       slidesPerGroup: 2,
       initialSlide: 2,

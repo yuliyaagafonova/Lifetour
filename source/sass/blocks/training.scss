@@ -1,6 +1,7 @@
 .training__wrapper {
   padding-top: 36px;
   padding-bottom: 20px;
+  word-break: break-word;
 }
 
 .training__title {
@@ -61,8 +62,7 @@
 
 .swiper-3 .swiper-slide__wrapper h4 {
   @include training-card-title;
-
-  word-break: break-word;
+  max-width: 200px;
 }
 
 .swiper-3 .swiper-slide span {
@@ -91,7 +91,7 @@
     content: "";
     position: absolute;
     width: 2px;
-    height: 183px;
+    height: calc(100% - 18%);
     background: $secondary-icon-color;
     top: 15px;
     left: 6px;
@@ -196,6 +196,10 @@
     object-fit: cover;
   }
 
+  .swiper-3 .swiper-slide__wrapper h4 {
+    max-width: 150px;
+  }
+
   .training__process-list {
     grid-template-columns: 233px 272px;
     column-gap: 175px;
@@ -244,6 +248,10 @@
 
   .swiper-3 .swiper-slide__img {
     width: 255px;
+  }
+
+  .swiper-3 .swiper-slide__wrapper h4 {
+    max-width: 200px;
   }
 
   .training__process-list {

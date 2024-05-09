@@ -12,6 +12,7 @@
 .tours__wrapper {
   padding-top: 38px;
   padding-bottom: 20px;
+  word-break: break-word;
 }
 
 .tours__title {
@@ -242,6 +243,10 @@
   align-items: center;
   justify-content: space-between;
   width: 215px;
+}
+
+.tours__button-more-icon {
+  min-width: 10px;
 }
 
 @media (min-width: $width-tablet) {

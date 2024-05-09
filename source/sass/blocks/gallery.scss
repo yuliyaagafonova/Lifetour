@@ -1,5 +1,6 @@
 .gallery__wrapper {
   padding-top: 37px;
+  word-break: break-word;
 }
 
 .gallery__title {
@@ -195,7 +196,10 @@
   }
 
   .swiper-6 .swiper-wrapper {
-    width: 1440px;
+    width: 1465px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
   }
 
   .swiper-6 .swiper-slide {
