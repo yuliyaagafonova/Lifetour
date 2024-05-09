@@ -34,3 +34,10 @@
 .footer__phone {
   display: none;
 }
+
+@media (min-width: $width-tablet) {
+  .navigation__list {
+    display: flex;
+    gap: 23.5px;
+  }
+}

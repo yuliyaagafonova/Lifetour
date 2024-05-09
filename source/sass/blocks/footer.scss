@@ -22,3 +22,31 @@
   text-align: center;
   margin-top: 22px;
 }
+
+@media (min-width: $width-tablet) {
+  .footer__wrapper {
+    padding: 34px 46px 20px 44px;
+  }
+
+  .footer__nav-wrapper {
+    display: flex;
+    gap: 42px;
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__nav {
+    margin-top: 0;
+  }
+
+  .footer__social {
+    margin-top: 34px;
+  }
+
+  .footer__copyright {
+    margin-top: 34px;
+  }
+}

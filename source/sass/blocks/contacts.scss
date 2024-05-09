@@ -69,8 +69,6 @@
 
 .contacts__info {
   @include text-regular;
-  font-size: 14px;
-  line-height: 20px;
   display: block;
   margin-top: 8px;
   color: $primary-text-color;
@@ -94,15 +92,82 @@
 .contacts__map {
   display: block;
   object-fit: cover;
+  margin: 0 auto;
   margin-bottom: 20px;
   position: relative;
   left: -0.3px;
 }
 
 @media (min-width: $width-tablet) {
+  .contacts__wrapper {
+    padding: 59.5px 35px 40px 44px;
+  }
+
   .contacts__wrapper p {
     font-size: 16px;
     line-height: 24px;
+    max-width: 570px;
+    margin-top: 20.5px;
+  }
+
+  .contacts__list {
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 42px;
+  }
+
+  .contacts__icon {
+    width: 24px;
+    height: 24px;
+
+    &--phone {
+      background-position: left;
+      background-size: 24px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &--mail {
+      background-position: left;
+      background-size: 24px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &--pin {
+      background-position: left;
+      background-size: 24px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .contacts__text-wrapper {
+    max-width: 288px;
+  }
+
+  .contacts__info {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 6px;
+  }
+
+  .contacts__map-wrapper {
+
+    &::after {
+      width: 42px;
+      height: 42px;
+      top: 53.5%;
+      right: 44.5%;
+    }
+  }
+
+  .contacts__map {
+    margin-bottom: 40px;
+    width: 768px;
+    height: 340px;
+    left: -0.7px;
   }
 }
 
