@@ -84,7 +84,7 @@
               <div class="swiper-slide__wrapper swiper-slide__wrapper--photos container">
                 <h2>Невероятная природа Камчатки</h2>
                 <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природ&nbsp;в мире.</p>
-                <button class="swiper-slide__button button" type="button">Смотреть тур</button>
+                <button class="swiper-slide__button button" tabindex="-1" type="button">Смотреть тур</button>
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/photo-1-desktop.webp 1x, img/hero/photo-1-desktop@2x.webp 2x" width="308" height="407">
                   <source type="image/webp" srcset="img/hero/photo-1-tablet.webp 1x, img/hero/photo-1-tablet@2x.webp 2x" width="266" height="351">
@@ -113,7 +113,7 @@
               <div class="swiper-slide__wrapper container">
                 <h2>Магические пейзажи Алтайского Края</h2>
                 <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                <button class="swiper-slide__button button" type="button">Смотреть тур</button>
+                <button class="swiper-slide__button button" tabindex="-1" type="button">Смотреть тур</button>
                 <ul class="swiper-info">
                   <li class="swiper-info__item">
                     <span class="swiper-info__icon swiper-info__icon--days"></span>
@@ -690,15 +690,15 @@
       <div class="form__wrapper container">
         <h2>Остались вопросы?</h2>
         <p>Заполните форму и наш оператор <span>свяжется <span>с вами для консультации.</span></span></p>
-        <form class="form__fields" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="form__fields" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__wrapper-fields">
             <div class="form__input-wrapper">
               <input class="form__phone" type="tel" pattern="\+?[0-9\s\-\(\)]+" name="phone" id="phone" required>
-              <label class="form__label" for="phone">Телефон</label>
+              <label class="form__label form__label--phone" for="phone">Телефон</label>
             </div>
             <div class="form__input-wrapper">
-              <input class="form__email" type="email" name="email" id="email">
-              <label class="form__label" for="email">Email</label>
+              <input class="form__email" type="email" pattern="[A-Za-zА-Яа-яЁё0-9._%+-]+@[a-z0-9.-]+.[A-Za-zА-Яа-яЁё]{2,4}$" name="email" id="email" required>
+              <label class="form__label form__label--email" for="email">Email</label>
             </div>
             <button class="form__button button" type="submit">Отправить</button>
           </div>

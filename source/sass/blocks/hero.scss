@@ -138,6 +138,11 @@
   border: 1px solid $primary-background-color;
 }
 
+.swiper-1 .swiper-pagination-bullet:focus {
+  outline: 2px solid $primary-background-color;
+  opacity: 0.5;
+}
+
 @media (min-width: $width-tablet) {
   .hero {
     width: 99.98%;

@@ -27,6 +27,20 @@
   margin-top: 22px;
 }
 
+.footer__copyright:hover {
+  opacity: 0.5;
+}
+
+.footer__copyright:active {
+  opacity: 0.3;
+}
+
+.footer__copyright.disabled {
+  color: $disabled-button-color;
+  pointer-events: none;
+  cursor: default;
+}
+
 .footer__phone {
   display: none;
 }

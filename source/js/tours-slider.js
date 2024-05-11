@@ -6,6 +6,10 @@ new Swiper('.swiper-2', {
 
   slidesPerView: 1,
   loop: false,
+
+  observer: true,
+observeParents: true,
+
   navigation: {
     nextEl: '.tours__button-next',
     prevEl: '.tours__button-prev',

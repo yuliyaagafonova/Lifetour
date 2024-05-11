@@ -12,6 +12,7 @@
 
 .phone--dark-bg:focus-visible {
   color: $primary-text-color;
+  outline: none;
 }
 
 .phone--dark-bg:active {
@@ -31,6 +32,7 @@
 
 .phone--light-bg:focus-visible {
   color: $primary-button-color;
+  outline: none;
 }
 
 .phone--light-bg:active {
