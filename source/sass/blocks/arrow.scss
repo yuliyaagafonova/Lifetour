@@ -23,9 +23,12 @@
 
 .arrow-button:focus-visible {
   background: $hover-button-color;
-  color: $active-button-color;
   border: none;
   outline: none;
+}
+
+.arrow-button:focus-visible use {
+  fill: $active-button-color;
 }
 
 .arrow-button:active {
@@ -52,4 +55,3 @@
 .arrow-button:disabled use {
   fill: #ffffff;
 }
-

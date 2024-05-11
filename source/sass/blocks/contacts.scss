@@ -10,11 +10,13 @@
 
 .contacts__wrapper p {
   @include text-regular;
+
   margin-top: 29px;
 }
 
 .contacts__list {
   @include list-reset;
+
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -70,6 +72,7 @@
 
 .contacts__info {
   @include text-regular;
+
   display: block;
   margin-top: 8px;
   color: $primary-text-color;
@@ -82,7 +85,7 @@
   margin: 0 auto;
 
   &::after {
-    content: '';
+    content: "";
     background: url("/__spritemap__#sprite-pin-map-view");
     width: 28px;
     height: 28px;
@@ -117,7 +120,7 @@
     margin-top: 40px;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 42px;
+    gap: 42.5px;
   }
 
   .contacts__icon {
@@ -169,7 +172,7 @@
   }
 
   .contacts__map {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
     width: 768px;
     height: 340px;
     left: -0.7px;
@@ -178,7 +181,7 @@
 
 @media (min-width: $width-desktop) {
   .contacts {
-    padding: 123.5px 120px 0 120px;
+    padding: 123.5px 120px 0;
     display: grid;
     grid-template-columns: repeat(2, 600px);
     align-items: center;
@@ -265,4 +268,3 @@
     margin-top: -7px;
   }
 }
-

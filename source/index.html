@@ -23,38 +23,38 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="javascript:void(0);">
+              <a class="nav__link menu-link" href="#" data-target="tours">
                 Туры
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="javascript:void(0);">
+              <a class="nav__link menu-link" href="#" data-target="training">
                 Обучение
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="javascript:void(0);">
+              <a class="nav__link menu-link" href="#" data-target="about">
                 О нас
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="javascript:void(0);">
+              <a class="nav__link menu-link" href="#" data-target="reviews">
                 Отзывы
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="javascript:void(0);">
+              <a class="nav__link menu-link" href="#" data-target="gallery">
                 Фотографии
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="javascript:void(0);">
+              <a class="nav__link menu-link" href="#" data-target="footer">
                 Контакты
               </a>
             </li>
           </ul>
         </nav>
-        <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
+        <a class="header__phone phone phone--dark-bg" href="tel:88000000000">8 800 000-00-00</a>
       </div>
     </header>
 
@@ -133,7 +133,7 @@
     </section>
 
     <div class="bg-wrapper-tours">
-      <section class="tours" data-test="tours">
+      <section class="tours" data-test="tours" id="tours">
         <div class="tours__wrapper container">
           <div class="tours__wrapper-title">
             <h2 class="tours__title title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
@@ -155,7 +155,7 @@
               <li class="swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="img/tours/tour-1.webp 1x, img/tours/tour-1@2x.webp 2x">
-                  <img class="swiper-slide__img" src="img/tours/tour-1.jpg" srcset="img/tours/tour-1.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография Эльбруса." loading="lazy">
+                  <img class="swiper-slide__img swiper-slide__img--tour-1" src="img/tours/tour-1.jpg" srcset="img/tours/tour-1.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография Эльбруса." loading="lazy">
                 </picture>
                 <div class="swiper-slide__wrapper">
                   <div class="swiper-slide__wrapper-days">
@@ -190,7 +190,7 @@
               <li class="swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="img/tours/tour-2.webp 1x, img/tours/tour-2@2x.webp 2x">
-                  <img class="swiper-slide__img" src="img/tours/tour-2.jpg" srcset="img/tours/tour-2.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография Белухи." loading="lazy">
+                  <img class="swiper-slide__img swiper-slide__img--tour-2" src="img/tours/tour-2.jpg" srcset="img/tours/tour-2.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография Белухи." loading="lazy">
                 </picture>
                 <div class="swiper-slide__wrapper">
                   <div class="swiper-slide__wrapper-days">
@@ -225,7 +225,7 @@
               <li class="swiper-slide swiper-slide--3">
                 <picture>
                   <source type="image/webp" srcset="img/tours/tour-3.webp 1x, img/tours/tour-3@2x.webp 2x">
-                  <img class="swiper-slide__img" src="img/tours/tour-3.jpg" srcset="img/tours/tour-3.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография гор Фишт." loading="lazy">
+                  <img class="swiper-slide__img swiper-slide__img--tour-3" src="img/tours/tour-3.jpg" srcset="img/tours/tour-3.jpg@2x.jpg 2x"  width="290" height="416" alt="Фотография гор Фишт." loading="lazy">
                 </picture>
                 <div class="swiper-slide__wrapper">
                   <div class="swiper-slide__wrapper-days">
@@ -260,7 +260,7 @@
               <li class="swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="img/tours/tour-4.webp 1x, img/tours/tour-4@2x.webp 2x">
-                  <img class="swiper-slide__img" src="img/tours/tour-4.jpg" srcset="img/tours/tour-4.jpg@2x.jpg 2x"  width="300" height="416" alt="Фотография горы Манарага." loading="lazy">
+                  <img class="swiper-slide__img swiper-slide__img--tour-4" src="img/tours/tour-4.jpg" srcset="img/tours/tour-4.jpg@2x.jpg 2x"  width="300" height="416" alt="Фотография горы Манарага." loading="lazy">
                 </picture>
                 <div class="swiper-slide__wrapper">
                   <div class="swiper-slide__wrapper-days">
@@ -303,7 +303,7 @@
         </div>
       </section>
 
-      <section class="training" data-test="training">
+      <section class="training" data-test="training" id="training">
         <div class="training__wrapper container">
           <h2 class="training__title title" data-shadow="Обучение">Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами, за плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
@@ -424,7 +424,7 @@
       </section>
     </div>
 
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="about">
       <div class="about__wrapper">
         <div class="about__bg"></div>
         <div class="about__content-wrapper container">
@@ -438,7 +438,7 @@
     </section>
 
     <div class="bg-wrapper-reviews">
-      <section class="reviews" data-test="reviews">
+      <section class="reviews" data-test="reviews" id="reviews">
         <div class="reviews__wrapper">
           <div class="reviews__wrapper-title container">
             <h2 class="reviews__title title" data-shadow="Отзывы">Отзывы</h2>
@@ -510,7 +510,7 @@
         </div>
       </section>
 
-      <section class="adv" data-test="adv">
+      <section class="adv" data-test="adv" id="adv">
         <div class="adv__wrapper container">
           <h2 class="adv__title title" data-shadow="Преимущества">Преимущества</h2>
           <div class="adv__slider swiper-5">
@@ -623,7 +623,7 @@
       </section>
     </div>
 
-    <section class="gallery" data-test="gallery">
+    <section class="gallery" data-test="gallery" id="gallery">
       <div class="gallery__wrapper container">
         <h2 class="gallery__title title" data-shadow="Фотогалерея">Фотогалерея</h2>
         <div class="gallery__wrapper-text">
@@ -686,25 +686,27 @@
       </div>
     </section>
 
-    <section class="form" data-test="form">
+    <section class="form" data-test="form" id="form">
       <div class="form__wrapper container">
         <h2>Остались вопросы?</h2>
-        <p>Заполните форму и наш оператор <span>свяжется<span> с вами для консультации.</span></span></p>
-        <form class="form__fields" action="https://echo.htmlacademy.ru/" method="post" id="form">
+        <p>Заполните форму и наш оператор <span>свяжется <span>с вами для консультации.</span></span></p>
+        <form class="form__fields" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__wrapper-fields">
-            <label aria-label="Телефон">
-              <input class="form__phone" placeholder="Телефон" type="text" name="phone" id="phone" required>
-            </label>
-            <label aria-label="Email">
-              <input class="form__email" placeholder="Email" type="email" name="email" id="email" required>
-            </label>
+            <div class="form__input-wrapper">
+              <input class="form__phone" type="tel" pattern="\+?[0-9\s\-\(\)]+" name="phone" id="phone" required>
+              <label class="form__label" for="phone">Телефон</label>
+            </div>
+            <div class="form__input-wrapper">
+              <input class="form__email" type="email" name="email" id="email">
+              <label class="form__label" for="email">Email</label>
+            </div>
             <button class="form__button button" type="submit">Отправить</button>
           </div>
         </form>
       </div>
     </section>
 
-    <section class="footer" data-test="footer">
+    <section class="footer" data-test="footer" id="footer">
       <div class="footer__contacts contacts">
         <div class="contacts__wrapper container">
           <h2 class="contacts__title title" data-shadow="Контакты">Контакты</h2>
@@ -714,14 +716,14 @@
               <span class="contacts__icon contacts__icon--phone"></span>
               <div class="contacts__text-wrapper">
                 <h3 class="contacts__text">Телефон</h3>
-                <a class="contacts__info" href="tel:89837454545">+7 983 745-45-45</a>
+                <a class="contacts__info phone phone--light-bg" href="tel:89837454545">+7 983 745-45-45</a>
               </div>
             </li>
             <li class="contacts__item">
               <span class="contacts__icon contacts__icon--mail"></span>
               <div class="contacts__text-wrapper">
                 <h3 class="contacts__text">Email</h3>
-                <a class="contacts__info" href="mailto:info@lifetour.com">info@lifetour.com</a>
+                <a class="contacts__info phone phone--light-bg" href="mailto:info@lifetour.com">info@lifetour.com</a>
               </div>
             </li>
             <li class="contacts__item">
@@ -746,42 +748,44 @@
       </div>
       <div class="footer__wrapper container">
         <div class="footer__nav-wrapper">
-          <img class="footer__logo" src="/__spritemap#sprite-logo-footer-view" width="142" height="42" alt="Логотип LIFETOUR.">
-          <nav class="footer__nav navigation">
+          <a class="footer__logo-link" href="#">
+            <img class="footer__logo" src="/__spritemap#sprite-logo-footer-view" width="142" height="42" alt="Логотип LIFETOUR.">
+          </a>
+          <div class="footer__nav navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link" href="javascript:void(0);">
+                <a class="navigation__link menu-link" href="#" data-target="tours">
                   Туры
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="javascript:void(0);">
+                <a class="navigation__link menu-link" href="#" data-target="training">
                   Обучение
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="javascript:void(0);">
+                <a class="navigation__link menu-link" href="#" data-target="about">
                   О нас
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="javascript:void(0);">
+                <a class="navigation__link menu-link" href="#" data-target="reviews">
                   Отзывы
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="javascript:void(0);">
+                <a class="navigation__link menu-link" href="#" data-target="gallery">
                   Фотографии
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="javascript:void(0);">
+                <a class="navigation__link menu-link" href="#" data-target="footer">
                   Контакты
                 </a>
               </li>
             </ul>
-          </nav>
-          <a class="footer__phone" href="tel:88007253232">8 800 725-32-32</a>
+          </div>
+          <a class="footer__phone phone phone--light-bg" href="tel:88007253232">8 800 725-32-32</a>
         </div>
         <ul class="footer__social social">
           <li class="social__item">
@@ -806,7 +810,7 @@
             </a>
           </li>
         </ul>
-        <p class="footer__copyright">Политика конфиденциальности</p>
+        <a class="footer__copyright" href="javascript:void(0);">Политика конфиденциальности</a>
       </div>
     </section>
     <script type="module" src="js/main.js"></script>

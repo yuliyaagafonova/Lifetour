@@ -89,6 +89,22 @@
 .swiper-2 .swiper-slide__img {
   object-fit: cover;
   display: block;
+
+  &--tour-1 {
+    background-color: #254144;
+  }
+
+  &--tour-2 {
+    background-color: #5d7589;
+  }
+
+  &--tour-3 {
+    background-color: #41593e;
+  }
+
+  &--tour-4 {
+    background-color: #8b852e;
+  }
 }
 
 .swiper-2 .swiper-slide__wrapper-days {

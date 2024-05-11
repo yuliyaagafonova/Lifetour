@@ -1,5 +1,6 @@
 .navigation__list {
   @include list-reset;
+
   display: grid;
   grid-template-columns: repeat(2, 120px);
   column-gap: 50px;
@@ -27,8 +28,30 @@
 
 .navigation__link {
   @include nav;
+
   color: $primary-text-color;
   text-decoration: none;
+}
+
+.navigation__link:hover {
+  padding-bottom: 3px;
+  border-bottom: 1px solid $primary-text-color;
+}
+
+.navigation__link:focus-visible {
+  outline: 1px solid $primary-text-color;
+  outline-offset: 3px;
+}
+
+.navigation__link:active {
+  color: $primary-button-color;
+  border-bottom: none;
+}
+
+.navigation__link.disabled {
+  color: $disabled-button-color;
+  pointer-events: none;
+  cursor: default;
 }
 
 @media (min-width: $width-tablet) {

@@ -6,11 +6,13 @@
 }
 
 .button-link:hover {
+  color: $primary-button-color;
   opacity: 0.2;
 }
 
 .button-link:focus-visible {
   color: $primary-button-color;
+  outline: none;
 }
 
 .button-link:active {

@@ -9,6 +9,7 @@
 
 .gallery__wrapper p {
   @include text-small;
+
   margin-top: 26px;
 }
 
@@ -32,6 +33,7 @@
 
 .swiper-6 .swiper-wrapper {
   @include list-reset;
+
   width: 320px;
 }
 
@@ -170,7 +172,7 @@
 
 @media (min-width: $width-desktop) {
   .gallery__wrapper {
-    padding: 123px 120px 0 120px;//151
+    padding: 123px 120px 0;
   }
 
   .gallery__wrapper-text {
@@ -183,7 +185,7 @@
   }
 
   .gallery__wrapper p {
-    max-width: 606px
+    max-width: 606px;
   }
 
   .gallery__slider {
@@ -211,7 +213,6 @@
   }
 
   .swiper-6 .swiper-slide__img {
-
     &--1 {
       width: 284px;
       height: 478px;

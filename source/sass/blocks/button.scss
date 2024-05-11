@@ -26,7 +26,6 @@
 
 .button:disabled {
   background: $disabled-button-color;
-  cursor: default;
+  pointer-events: none;
   border: 1px solid $disabled-button-color;
 }
-

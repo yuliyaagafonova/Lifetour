@@ -20,6 +20,9 @@
 
 .footer__copyright {
   @include captions-small;
+  display: block;
+  color: $primary-text-color;
+  text-decoration: none;
   text-align: center;
   margin-top: 22px;
 }
@@ -76,11 +79,9 @@
   }
 
   .footer__phone {
-    @include adv-title;
     display: block;
     width: 200px;
     color: $primary-text-color;
-    text-decoration: none;
     text-align: end;
   }
 

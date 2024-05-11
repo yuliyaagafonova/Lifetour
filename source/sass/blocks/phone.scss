@@ -1,0 +1,44 @@
+.phone {
+  @include adv-title;
+
+  display: block;
+  text-decoration: none;
+}
+
+.phone--dark-bg:hover {
+  color: $secondary-text-color;
+  opacity: 0.5;
+}
+
+.phone--dark-bg:focus-visible {
+  color: $primary-text-color;
+}
+
+.phone--dark-bg:active {
+  color: $active-button-color;
+  opacity: 1;
+}
+
+.phone--dark-bg.disabled {
+  color: $disabled-button-color;
+  pointer-events: none;
+}
+
+.phone--light-bg:hover {
+  color: $primary-button-color;
+  opacity: 0.1;
+}
+
+.phone--light-bg:focus-visible {
+  color: $primary-button-color;
+}
+
+.phone--light-bg:active {
+  color: $active-button-color;
+  opacity: 1;
+}
+
+.phone--light-bg.disabled {
+  color: $disabled-button-color;
+  pointer-events: none;
+}
