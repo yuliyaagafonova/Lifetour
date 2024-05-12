@@ -19,23 +19,23 @@ buttonNav.addEventListener('click', () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const menuLinks = document.querySelectorAll('.menu-link');
 
-  menuLinks.forEach(function(menuLink) {
-      menuLink.addEventListener('click', function(event) {
-          event.preventDefault();
+  menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener('click', (event) => {
+      event.preventDefault();
 
-          const targetId = menuLink.getAttribute('data-target');
-          const targetBlock = document.getElementById(targetId);
+      const targetId = menuLink.getAttribute('data-target');
+      const targetBlock = document.getElementById(targetId);
 
-          if (targetBlock) {
-              targetBlock.scrollIntoView({ behavior: 'smooth' });
-              modal.classList.remove('modal-active');
-              nav.classList.remove('active');
-              overlay.style.display = 'none';
-              buttonIcon.querySelector('use').setAttribute('href', '/__spritemap__#sprite-menu');
-          }
-      });
+      if (targetBlock) {
+        targetBlock.scrollIntoView({ behavior: 'smooth' });
+        modal.classList.remove('modal-active');
+        nav.classList.remove('active');
+        overlay.style.display = 'none';
+        buttonIcon.querySelector('use').setAttribute('href', '/__spritemap__#sprite-menu');
+      }
+    });
   });
 });

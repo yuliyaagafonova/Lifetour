@@ -8,7 +8,7 @@ new Swiper('.swiper-2', {
   loop: false,
 
   observer: true,
-observeParents: true,
+  observeParents: true,
 
   navigation: {
     nextEl: '.tours__button-next',

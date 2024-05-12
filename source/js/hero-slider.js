@@ -29,25 +29,33 @@ new Swiper('.swiper-1', {
 // const bullets = swiper.querySelectorAll('.swiper-pagination-bullet');
 // const slides = swiper.querySelectorAll('.swiper-slide');
 
-// bullets.forEach((bullet) => {
-//   bullet.setAttribute('tabindex', '0');
-// });
 
 const swiper = document.querySelector('.swiper-1');
 const bullets = swiper.querySelectorAll('.swiper-pagination-bullet');
 const slides = swiper.querySelectorAll('.swiper-slide');
 
 
-bullets.forEach((bullet, index) => {
+bullets.forEach((bullet) => {
   bullet.setAttribute('tabindex', '0');
-  bullet.setAttribute('data-index', 'bullet[i]');
+});
 
+bullets.forEach((bullet, index) => {
 
-var tabs = document.querySelectorAll('.tab');
-tabs.forEach(function(tab) {
-  tab.addEventListener('click', function() {
-    var index = parseInt(this.getAttribute('data-index'));
-    swiper.slideTo(index);
+  bullet.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.keyCode === 32) {
+      showSlide(index);
+    }
   });
 });
-});
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.style.display = 'block';
+      bullets[i].classList.add('swiper-pagination-bullet-active');
+    } else {
+      slide.style.display = 'none';
+      bullets[i].classList.remove('swiper-pagination-bullet-active');
+    }
+  });
+}

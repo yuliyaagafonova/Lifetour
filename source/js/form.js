@@ -4,7 +4,7 @@ const emailInput = document.querySelector('.form__email');
 const phoneLabel = document.querySelector('.form__label--phone');
 const emailLabel = document.querySelector('.form__label--email');
 
-phoneInput.addEventListener('input', function () {
+phoneInput.addEventListener('input', () => {
   if (phoneInput.value !== '') {
     phoneLabel.style.opacity = '0';
   } else {
@@ -12,7 +12,7 @@ phoneInput.addEventListener('input', function () {
   }
 });
 
-emailInput.addEventListener('input', function () {
+emailInput.addEventListener('input', () => {
   if (emailInput.value !== '') {
     emailLabel.style.opacity = '0';
   } else {
