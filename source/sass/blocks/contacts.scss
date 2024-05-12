@@ -35,7 +35,7 @@
   height: 22px;
 
   &--phone {
-    background-image: url("/__spritemap__#sprite-phone-view");
+    background-image: url("/__spritemap#sprite-phone-view");
     background-position: left -1px;
     background-repeat: no-repeat;
     background-size: 22px;
@@ -44,7 +44,7 @@
   }
 
   &--mail {
-    background-image: url("/__spritemap__#sprite-mail-view");
+    background-image: url("/__spritemap#sprite-mail-view");
     background-position: left -1px;
     background-repeat: no-repeat;
     background-size: 22px;
@@ -53,7 +53,7 @@
   }
 
   &--pin {
-    background-image: url("/__spritemap__#sprite-pin-dark-view");
+    background-image: url("/__spritemap#sprite-pin-dark-view");
     background-position: left -1px;
     background-repeat: no-repeat;
     background-size: 22px;
@@ -86,7 +86,7 @@
 
   &::after {
     content: "";
-    background: url("/__spritemap__#sprite-pin-map-view");
+    background: url("/__spritemap#sprite-pin-map-view");
     width: 28px;
     height: 28px;
     position: absolute;
@@ -102,6 +102,7 @@
   margin-bottom: 20px;
   position: relative;
   left: -0.3px;
+  background-color: #f2f3f4;
 }
 
 @media (min-width: $width-tablet) {

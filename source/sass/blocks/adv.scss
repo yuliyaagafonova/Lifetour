@@ -69,13 +69,13 @@
 
 @media (min-width: $width-tablet) {
   .adv {
-    background: url("../../img/backgrounds/adv-bg-tablet.png");
+    background: url("../img/backgrounds/adv-bg-tablet.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 165px;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/backgrounds/adv-bg-tablet@2x.png'"), 2091px auto;
+      background-image: url("../img/backgrounds/adv-bg-tablet@2x.png'"), 2091px auto;
     }
   }
 

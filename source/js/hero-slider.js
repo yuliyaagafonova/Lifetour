@@ -6,6 +6,7 @@ new Swiper('.swiper-1', {
   slidesPerView: 1,
   loop: true,
   watchSlidesProgress: true,
+  autoHeight: true,
 
   keyboard: {
     enabled: true,
@@ -22,12 +23,8 @@ new Swiper('.swiper-1', {
     1440: {
       allowTouchMove: false,
     }
-  }
+  },
 });
-
-
-// const bullets = swiper.querySelectorAll('.swiper-pagination-bullet');
-// const slides = swiper.querySelectorAll('.swiper-slide');
 
 
 const swiper = document.querySelector('.swiper-1');

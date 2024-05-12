@@ -32,38 +32,38 @@
 }
 
 .swiper-1 .swiper-slide--1 {
-  background-image: url("../../img/hero/hero-1-mobile.jpg");
+  background-image: url("../img/hero/hero-1-mobile.webp");
   background-color: #6c90b8;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: $retina) {
-    background-image: url("../../img/hero/hero-1-mobile@2x.jpg"), 320px auto;
+    background-image: url("../img/hero/hero-1-mobile@2x.webp"), 320px auto;
   }
 }
 
 .swiper-1 .swiper-slide--2 {
-  background-image: url("../../img/hero/hero-2-mobile.jpg");
+  background-image: url("../img/hero/hero-2-mobile.webp");
   background-color: #6c90b8;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: $retina) {
-    background-image: url("../../img/hero/hero-2-mobile@2x.jpg"), 320px auto;
+    background-image: url("../img/hero/hero-2-mobile@2x.webp"), 320px auto;
   }
 }
 
 .swiper-1 .swiper-slide--3 {
-  background-image: url("../../img/hero/hero-3-mobile.jpg");
+  background-image: url("../img/hero/hero-3-mobile.webp");
   background-color: #233422;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: $retina) {
-    background-image: url("../../img/hero/hero-3-mobile@2x.jpg"), 320px auto;
+    background-image: url("../img/hero/hero-3-mobile@2x.webp"), 320px auto;
   }
 }
 
@@ -138,7 +138,7 @@
   border: 1px solid $primary-background-color;
 }
 
-.swiper-1 .swiper-pagination-bullet:focus {
+.swiper-1 .swiper-pagination-bullet:focus-visible {
   outline: 2px solid $primary-background-color;
   opacity: 0.5;
 }
@@ -149,35 +149,35 @@
   }
 
   .swiper-1 .swiper-slide--1 {
-    background-image: url("../../img/hero/hero-1-tablet.jpg");
+    background-image: url("../img/hero/hero-1-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/hero/hero-1-tablet@2x.jpg"), 768px auto;
+      background-image: url("../img/hero/hero-1-tablet@2x.jpg"), 768px auto;
     }
   }
 
   .swiper-1 .swiper-slide--2 {
-    background-image: url("../../img/hero/hero-2-tablet.jpg");
+    background-image: url("../img/hero/hero-2-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/hero/hero-2-tablet@2x.jpg"), 768px auto;
+      background-image: url("../img/hero/hero-2-tablet@2x.jpg"), 768px auto;
     }
   }
 
   .swiper-1 .swiper-slide--3 {
-    background-image: url("../../img/hero/hero-3-tablet.jpg");
+    background-image: url("../img/hero/hero-3-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/hero/hero-3-tablet@2x.jpg"), 768px auto;
+      background-image: url("../img/hero/hero-3-tablet@2x.jpg"), 768px auto;
     }
   }
 
@@ -234,35 +234,35 @@
   }
 
   .swiper-1 .swiper-slide--1 {
-    background-image: url("../../img/hero/hero-1-desktop.jpg");
+    background-image: url("../img/hero/hero-1-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/hero/hero-1-desktop@2x.jpg"), 768px auto;
+      background-image: url("../img/hero/hero-1-desktop@2x.jpg"), 768px auto;
     }
   }
 
   .swiper-1 .swiper-slide--2 {
-    background-image: url("../../img/hero/hero-2-desktop.jpg");
+    background-image: url("../img/hero/hero-2-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/hero/hero-2-desktop@2x.jpg"), 768px auto;
+      background-image: url("../img/hero/hero-2-desktop@2x.jpg"), 768px auto;
     }
   }
 
   .swiper-1 .swiper-slide--3 {
-    background-image: url("../../img/hero/hero-3-desktop.jpg");
+    background-image: url("../img/hero/hero-3-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/hero/hero-3-desktop@2x.jpg"), 768px auto;
+      background-image: url("../img/hero/hero-3-desktop@2x.jpg"), 768px auto;
     }
   }
 
@@ -327,14 +327,14 @@
     height: 12px;
 
     &--days {
-      background-image: url("/__spritemap__#sprite-moon-view");
+      background-image: url("/__spritemap#sprite-moon-view");
       background-position: left center;
       background-repeat: no-repeat;
       background-size: 12px;
     }
 
     &--level {
-      background-image: url("/__spritemap__#sprite-level-view");
+      background-image: url("/__spritemap#sprite-level-view");
       background-position: left;
       background-repeat: no-repeat;
     }

@@ -122,7 +122,7 @@
 
 .training__process-icon {
   &--map {
-    background-image: url("/__spritemap__#sprite-map-view");
+    background-image: url("/__spritemap#sprite-map-view");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -131,7 +131,7 @@
   }
 
   &--boots {
-    background-image: url("/__spritemap__#sprite-boots-view");
+    background-image: url("/__spritemap#sprite-boots-view");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -140,7 +140,7 @@
   }
 
   &--trees {
-    background-image: url("/__spritemap__#sprite-trees-view");
+    background-image: url("/__spritemap#sprite-trees-view");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -149,7 +149,7 @@
   }
 
   &--mountain {
-    background-image: url("/__spritemap__#sprite-mountain-view");
+    background-image: url("/__spritemap#sprite-mountain-view");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 25px;

@@ -1,5 +1,5 @@
 .form {
-  background: url("../../img/backgrounds/form-bg-mobile.jpg");
+  background-image: url("../img/backgrounds/form-bg-mobile.jpg");
   background-color: #21281b;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,7 +7,7 @@
   position: relative;
 
   @media (min-resolution: $retina) {
-    background-image: url("../../img/backgrounds/form-bg-mobile@2x.jpg"), 768px auto;
+    background-image: url("../img/backgrounds/form-bg-mobile@2x.jpg"), 768px auto;
   }
 
   &::after {
@@ -103,10 +103,6 @@
   background-color: $primary-background-color;
 }
 
-.form__wrapper-fields input.error {
-  border: 2px solid red;
-}
-
 .form__wrapper-fields input::placeholder {
   color: $primary-button-color;
 }
@@ -182,14 +178,14 @@
 
 @media (min-width: $width-desktop) {
   .form {
-    background: url("../../img/backgrounds/form-bg-desktop.jpg");
+    background-image: url("../img/backgrounds/form-bg-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/backgrounds/form-bg-desktop@2x.jpg"), 1440px auto;
+      background-image: url("../img/backgrounds/form-bg-desktop@2x.jpg"), 1440px auto;
     }
   }
 
